@@ -20,15 +20,26 @@ export const AvatarRosterLayout: React.FC<Props> = ({ payload, tokens }) => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center py-4">
       <div 
-        className={`w-full grid ${
-          isTwoCols ? 'grid-cols-2 gap-16 max-w-5xl' : 'grid-cols-3 gap-10 max-w-7xl'
-        } items-stretch`}
+        className="w-full flex flex-row items-stretch justify-center"
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'stretch',
+          justifyContent: 'center',
+          gap: isTwoCols ? '56px' : '36px',
+          width: '100%',
+          maxWidth: isTwoCols ? '1120px' : '1500px',
+          margin: '0 auto'
+        }}
       >
         {members.map((member) => (
           <div 
             key={member.id}
             className="rounded-2xl shadow-sm border flex flex-col justify-between p-10 relative overflow-hidden text-center items-center transition-all bg-white"
             style={{ 
+              flex: '1 1 0%',
+              minWidth: 0,
+              maxWidth: isTwoCols ? '520px' : '480px',
               backgroundColor: palette.surface, 
               borderColor: palette.border, 
               minHeight: isTwoCols ? '540px' : '520px'

@@ -45,11 +45,21 @@ export const HeroIntroLayout: React.FC<Props> = ({ payload, tokens }) => {
 
       {/* 3 Subtle Horizontal Value Pillars (Refined minimal layout, not heavy cards) */}
       <div 
-        className="w-full grid grid-cols-3 gap-12 pt-8 border-t"
-        style={{ borderColor: `${palette.border}80` }}
+        className="w-full flex flex-row items-start justify-between pt-8 border-t"
+        style={{ 
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '48px',
+          width: '100%',
+          borderColor: `${palette.border}80` 
+        }}
       >
         {pillars.map((pillar, idx) => (
-          <div key={idx} className="flex flex-col justify-between">
+          <div 
+            key={idx} 
+            className="flex flex-col justify-between"
+            style={{ flex: '1 1 0%', minWidth: 0 }}
+          >
             <div>
               <div className="flex items-center space-x-3 mb-3">
                 <span 

@@ -587,18 +587,18 @@ function renderPptxHeroIntro(
   // 1. Executive Callout Pill
   slide.addShape('roundRect', {
     x: startX,
-    y: 2.1,
+    y: 2.15,
     w: 3.8,
-    h: 0.35,
-    rectRadius: 0.17,
+    h: 0.32,
+    rectRadius: 0.16,
     fill: { color: 'E6F4F1' },
     line: { color: accent, width: 1 }
   });
   slide.addText('OPERATIONAL INTEGRITY & VERIFIED SERVICE', {
     x: startX + 0.15,
-    y: 2.12,
+    y: 2.16,
     w: 3.5,
-    h: 0.3,
+    h: 0.28,
     fontSize: 8.5,
     fontFace: 'Arial',
     color: primary,
@@ -611,10 +611,10 @@ function renderPptxHeroIntro(
     tagline || 'Built alongside luxury hoteliers to bridge the gap between executive standards and daily floor execution — ensuring accountability, tamper-proof proof, and pristine guest experiences across every shift.',
     {
       x: startX,
-      y: 2.6,
-      w: totalWidth - 1.0,
+      y: 2.68,
+      w: totalWidth - 0.8,
       h: 0.95,
-      fontSize: 14.5,
+      fontSize: 14,
       fontFace: 'Georgia',
       color: textColor,
       lineSpacingMultiple: 1.25
@@ -624,7 +624,7 @@ function renderPptxHeroIntro(
   // 3. Subtle Horizontal Divider
   slide.addShape('rect', {
     x: startX,
-    y: 3.75,
+    y: 3.85,
     w: totalWidth,
     h: 0.02,
     fill: { color: cardBorder }
@@ -634,7 +634,7 @@ function renderPptxHeroIntro(
   const cols = 3;
   const gap = 0.5;
   const colW = (totalWidth - (cols - 1) * gap) / cols;
-  const pillarY = 4.0;
+  const pillarY = 4.12;
 
   pillars.forEach((pillar: any, idx: number) => {
     const pX = startX + idx * (colW + gap);

@@ -24,9 +24,19 @@ export const CardGridLayout: React.FC<Props> = ({ payload, tokens, onOpenSources
   if (columns === 4) gridColsClass = 'grid-cols-4';
   if (columns === 6) gridColsClass = 'grid-cols-3';
 
+  const gridColumnsCount = columns === 2 ? 2 : columns === 4 ? 4 : 3;
+
   return (
     <div className="w-full h-full flex flex-col justify-center items-center py-2 gap-8">
-      <div className={`grid ${gridColsClass} gap-7 w-full items-stretch`}>
+      <div 
+        className={`grid ${gridColsClass} gap-7 w-full items-stretch`}
+        style={{
+          display: 'grid',
+          gridTemplateColumns: `repeat(${gridColumnsCount}, minmax(0, 1fr))`,
+          gap: '28px',
+          width: '100%'
+        }}
+      >
         {cards.map((card) => {
           const isFact = card.badge?.includes('FACT');
 

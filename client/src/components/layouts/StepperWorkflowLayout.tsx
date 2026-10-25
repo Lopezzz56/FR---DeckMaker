@@ -21,7 +21,15 @@ export const StepperWorkflowLayout: React.FC<Props> = ({ payload, tokens }) => {
   return (
     <div className="w-full h-full flex flex-col justify-center py-2 gap-8">
       {/* 4-Step Cards Grid */}
-      <div className="grid grid-cols-4 gap-7 w-full items-stretch">
+      <div 
+        className="grid grid-cols-4 gap-7 w-full items-stretch"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
+          gap: '28px',
+          width: '100%'
+        }}
+      >
         {steps.map((step, idx) => (
           <div 
             key={idx}
