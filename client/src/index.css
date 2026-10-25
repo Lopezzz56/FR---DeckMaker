@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: 'Newsreader', 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+    --bg-workspace: #f8fafc;
+    --card-surface: #ffffff;
+    --border-subtle: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --brand-primary: #1e40af;
+    --brand-accent: #2563eb;
+    --brand-light: #eff6ff;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--bg-workspace);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Printable slide deck styles */
+@media print {
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+  body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .slide-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 4px 12px rgba(61, 184, 158, 0.2));
+  }
+  50% {
+    transform: scale(1.04);
+    filter: drop-shadow(0 8px 24px rgba(61, 184, 158, 0.45));
+  }
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes logoPulseGlow {
+  0%, 100% {
+    stroke-opacity: 0.3;
+    filter: drop-shadow(0 4px 12px rgba(61, 184, 158, 0.2));
+  }
+  50% {
+    stroke-opacity: 0.7;
+    filter: drop-shadow(0 8px 24px rgba(61, 184, 158, 0.5));
+  }
+}
+
+@keyframes logoLetters {
+  0%, 100% {
+    opacity: 0.92;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaderBar {
+  0% {
+    transform: translateX(-100%);
+    width: 40%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    transform: translateX(250%);
+    width: 40%;
+  }
+}
+
+.animate-logo-pulse {
+  animation: logoPulse 2.4s ease-in-out infinite;
+}
+
+.animate-logo-float {
+  animation: logoFloat 2.8s ease-in-out infinite;
+}
+
+.animate-logo-pulse-glow {
+  animation: logoPulseGlow 2.4s ease-in-out infinite;
+}
+
+.animate-logo-letters {
+  animation: logoLetters 2.4s ease-in-out infinite;
+}
+
+.animate-loader-bar {
+  animation: loaderBar 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+

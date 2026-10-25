@@ -1,0 +1,2876 @@
+[
+  {
+    "id": "deck-1792910630250",
+    "companyName": "Bvlgari Hotel Tokyo",
+    "websiteUrl": "https://bulgarihotels.com",
+    "createdAt": "2026-10-25T06:43:50.250Z",
+    "updatedAt": "2026-10-25T06:43:50.254Z",
+    "companyDossier": {
+      "name": "Bvlgari Hotel Tokyo",
+      "websiteUrl": "https://bulgarihotels.com",
+      "tagline": "Excellence in Hospitality",
+      "businessModel": "Boutique & Luxury Hotel Operations",
+      "properties": [
+        {
+          "name": "Bvlgari Hotel Tokyo Flagship Property",
+          "location": "Primary Destination",
+          "type": "Luxury Hotel & Suites"
+        },
+        {
+          "name": "Bvlgari Hotel Tokyo Boutique Retreat",
+          "location": "Regional Asset",
+          "type": "Resort & Wellness Spa"
+        }
+      ],
+      "operationalContext": [
+        "Dedicated hospitality operations across 2 identified properties",
+        "Focus on consistent guest satisfaction and room delivery standards",
+        "Need for real-time task verification across housekeeping and maintenance teams",
+        "Commitment to protecting property asset value and owner reporting clarity"
+      ],
+      "brandPalette": {
+        "primary": "#4a2c2a",
+        "secondary": "#0f172a",
+        "accent": "#d4a373",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      },
+      "sources": [
+        {
+          "title": "Bvlgari Hotel Tokyo Official Web Portal",
+          "url": "https://bulgarihotels.com",
+          "domain": "bulgarihotels.com",
+          "snippet": "Digital presence and property portfolio for Bvlgari Hotel Tokyo.",
+          "accessedAt": "2026-10-25T06:43:50.249Z",
+          "category": "official_site"
+        }
+      ],
+      "factsAndHypotheses": [
+        {
+          "id": "f1",
+          "statement": "Bvlgari Hotel Tokyo operates luxury hospitality properties with an emphasis on tailored guest experiences.",
+          "type": "verified_fact",
+          "sourceUrl": "https://bulgarihotels.com",
+          "sourceTitle": "Bvlgari Hotel Tokyo Verified Public Information",
+          "relevance": "Establishes verified brand positioning and target demographic."
+        },
+        {
+          "id": "h1",
+          "statement": "With multiple properties and varied accommodation types, maintaining identical room-readiness standards depends on physical supervision rounds.",
+          "type": "inferred_hypothesis",
+          "relevance": "Identifies the supervisor bottleneck where managers cannot inspect every turnover room on foot."
+        },
+        {
+          "id": "h2",
+          "statement": "Asset owners and leadership require transparent shift verification and audit-ready records of maintenance and housekeeping.",
+          "type": "inferred_hypothesis",
+          "relevance": "Connects to FocusRealms automated proof-of-work reporting."
+        }
+      ],
+      "userNotes": "Ultra luxury tower hotel with rooftop lounge and bespoke butler service"
+    },
+    "slides": [
+      {
+        "id": "slide-1",
+        "slideNumber": 1,
+        "section": "focusrealm_core",
+        "headerTag": "01 / 12",
+        "eyebrow": "HOTEL SERVICE EXECUTION PLATFORM",
+        "title": "Ownership you can see. Accountability you can prove.",
+        "subtitle": "An executive conversation on service execution, prepared for Bvlgari Hotel Tokyo.",
+        "footerNote": "Mise is care.",
+        "layoutType": "intro_title",
+        "cards": [
+          {
+            "id": "s1-c1",
+            "title": "Execution on the Floor",
+            "description": "Carrying proven SOPs into live shifts with room-by-room dispatch and timed windows.",
+            "badge": "Core Platform"
+          },
+          {
+            "id": "s1-c2",
+            "title": "Proof for Leadership",
+            "description": "Tamper-proof photo evidence and instant exception alerts for lean supervisory teams.",
+            "badge": "Accountability"
+          },
+          {
+            "id": "s1-c3",
+            "title": "Audit & Owner Records",
+            "description": "Immutable records for brand audits, owner reviews, and consistent 5-star delivery.",
+            "badge": "Assurance"
+          }
+        ]
+      },
+      {
+        "id": "slide-2",
+        "slideNumber": 2,
+        "section": "focusrealm_core",
+        "headerTag": "02 / 12",
+        "eyebrow": "OUR TEAM",
+        "title": "The people building Mise.",
+        "subtitle": "Built by hospitality operators and engineers with direct floor experience.",
+        "footerNote": "FocusRealm Executive Team",
+        "layoutType": "team_portraits",
+        "cards": [
+          {
+            "id": "s2-c1",
+            "title": "Sehej Sharma",
+            "description": "Chief Executive Officer. Driving platform strategy, luxury hospitality partnerships, and enterprise vision.",
+            "imageUrl": "/assets/p2_img1.png",
+            "badge": "Chief Executive Officer"
+          },
+          {
+            "id": "s2-c2",
+            "title": "Ali Electricwala",
+            "description": "Chief Operating Officer. Leading floor operations, property onboarding, and staff adoption.",
+            "imageUrl": "/assets/p2_img2.png",
+            "badge": "Chief Operating Officer"
+          },
+          {
+            "id": "s2-c3",
+            "title": "Aditya Mishra",
+            "description": "Chief Technology Officer. Architecting real-time shift systems, audit trails, and offline resilience.",
+            "imageUrl": "/assets/p2_img3.png",
+            "badge": "Chief Technology Officer"
+          }
+        ]
+      },
+      {
+        "id": "slide-3",
+        "slideNumber": 3,
+        "section": "focusrealm_core",
+        "headerTag": "03 / 12",
+        "eyebrow": "ADVISORY BOARD",
+        "title": "The people guiding us.",
+        "subtitle": "Decades of luxury training, standards development, and operational excellence.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "advisors_list",
+        "cards": [
+          {
+            "id": "s3-c1",
+            "title": "Renu Mehra",
+            "description": "Luxury & Celebrity Image Consultant & Corporate Trainer. Specializes in luxury etiquette, grooming, and 5-star brand identity.",
+            "imageUrl": "/assets/p3_img1.png",
+            "badge": "Industry Advisor"
+          },
+          {
+            "id": "s3-c2",
+            "title": "Parul Sharma",
+            "description": "Master Hospitality Trainer & Quality Auditor. Trained hotel staff for over 20 years in floor SOP discipline across premier chains.",
+            "imageUrl": "/assets/p3_img2.png",
+            "badge": "Industry Advisor"
+          }
+        ]
+      },
+      {
+        "id": "slide-4",
+        "slideNumber": 4,
+        "section": "focusrealm_core",
+        "headerTag": "04 / 12",
+        "eyebrow": "INDUSTRY CONTEXT",
+        "title": "Six challenges we hear across the industry.",
+        "subtitle": "Why standard operating procedures fail between the binder and the daily shift.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s4-c1",
+            "number": "01",
+            "title": "Supervisor Bottleneck",
+            "description": "Supervision happens in person. However capable a manager is, nobody can be on every floor or inspect every room at once."
+          },
+          {
+            "id": "s4-c2",
+            "number": "02",
+            "title": "Ghost SOP",
+            "description": "A carefully written procedure sits in a folder or binder, while daily practice gradually and silently moves away from it."
+          },
+          {
+            "id": "s4-c3",
+            "number": "03",
+            "title": "Invisible Performance Gap",
+            "description": "From head office, a strong shift and a difficult one look alike. Good work goes unrecognised, and small slips surface late."
+          },
+          {
+            "id": "s4-c4",
+            "number": "04",
+            "title": "Attrition Bleed",
+            "description": "When staff are not set up to succeed with clear expectations, they move on. Hard-won experience leaves with them, and recruitment restarts."
+          },
+          {
+            "id": "s4-c5",
+            "number": "05",
+            "title": "Star Rating Ceiling",
+            "description": "Consistency is what lifts ratings and reviews. Without it, a property can plateau despite the individual effort of its teams."
+          },
+          {
+            "id": "s4-c6",
+            "number": "06",
+            "title": "Audit Ambush",
+            "description": "Owners and brand reviews ask for evidence. Without a record kept as the work happens, it has to be painfully assembled afterwards."
+          }
+        ]
+      },
+      {
+        "id": "slide-5",
+        "slideNumber": 5,
+        "section": "focusrealm_core",
+        "headerTag": "05 / 12",
+        "eyebrow": "HOW MISE WORKS",
+        "title": "Your standards, implemented. Executed on every floor.",
+        "subtitle": "Mise does not rewrite your standards. It implements the standards your team has already proven.",
+        "footerNote": "Mise Architecture Overview",
+        "layoutType": "workflow_overview",
+        "cards": [
+          {
+            "id": "s5-step1",
+            "number": "1",
+            "title": "Your standard",
+            "description": "The proven procedures your team already trusts, carried directly into Mise without alteration.",
+            "badge": "Step 1"
+          },
+          {
+            "id": "s5-step2",
+            "number": "2",
+            "title": "Implemented as timed tasks",
+            "description": "Each standard becomes a task for the right role, in the right room, with a defined execution window.",
+            "badge": "Step 2"
+          },
+          {
+            "id": "s5-step3",
+            "number": "3",
+            "title": "Executed on staff phone",
+            "description": "Staff complete each step on their phone, with photo evidence where your standard requires it.",
+            "badge": "Step 3"
+          },
+          {
+            "id": "s5-step4",
+            "number": "4",
+            "title": "Evidence on record",
+            "description": "A tamper-proof service record that supports manager review, owner reporting and audit.",
+            "badge": "Step 4"
+          }
+        ]
+      },
+      {
+        "id": "slide-6",
+        "slideNumber": 6,
+        "section": "focusrealm_core",
+        "headerTag": "06 / 12",
+        "eyebrow": "ON THE FLOOR",
+        "title": "What the staff member sees: her rooms, her shift, one screen.",
+        "subtitle": "Clear room assignment, sequential timed windows, and instant SOP checklists on staff phones.",
+        "footerNote": "Mise Mobile Floor Application",
+        "layoutType": "staff_experience",
+        "cards": [
+          {
+            "id": "s6-screen",
+            "title": "Staff Mobile Screen",
+            "description": "Mobile shift execution interface showing room assignments and timed execution windows.",
+            "imageUrl": "/assets/p7_img1.png",
+            "imageCaption": "Live shift view for room attendants"
+          },
+          {
+            "id": "s6-f1",
+            "number": "01",
+            "title": "Shift at a glance",
+            "description": "Scheduled hours, check-in status and unassigned time for the shift are shown together."
+          },
+          {
+            "id": "s6-f2",
+            "number": "02",
+            "title": "Rooms in sequence",
+            "description": "Each assigned room is listed with its time window. One outside the shift is flagged and kept separate from hours."
+          },
+          {
+            "id": "s6-f3",
+            "number": "03",
+            "title": "Time stated plainly",
+            "description": "Unassigned time is shown separately from break time, so the schedule is never misread."
+          },
+          {
+            "id": "s6-f4",
+            "number": "04",
+            "title": "Four places, nothing more",
+            "description": "Today, My shift, My log and Guides: the only screens a staff member needs during a shift."
+          }
+        ]
+      },
+      {
+        "id": "slide-7",
+        "slideNumber": 7,
+        "section": "focusrealm_core",
+        "headerTag": "07 / 12",
+        "eyebrow": "SUPERVISION",
+        "title": "The manager’s view: assignments, exceptions and evidence.",
+        "subtitle": "Room assignments and blocked work resolved in seconds from one intuitive desktop dashboard.",
+        "footerNote": "Mise Manager Control Center",
+        "layoutType": "manager_experience",
+        "cards": [
+          {
+            "id": "s7-dashboard",
+            "title": "Manager Supervision Dashboard",
+            "description": "Shift management control center with real-time room dispatch and attendance verification.",
+            "imageUrl": "/assets/p8_img1.png",
+            "imageCaption": "Real-time floor supervision dashboard"
+          },
+          {
+            "id": "s7-p1",
+            "title": "Choose the shift",
+            "description": "Morning, afternoon and night shifts, each with its staff target and room count."
+          },
+          {
+            "id": "s7-p2",
+            "title": "Assign and clear",
+            "description": "Room assignments and blocked work are resolved from one unified control screen."
+          },
+          {
+            "id": "s7-p3",
+            "title": "Unknown is not absent",
+            "description": "Attendance not yet confirmed is shown as unknown, never prematurely marked as absent or late."
+          }
+        ]
+      },
+      {
+        "id": "slide-8",
+        "slideNumber": 8,
+        "section": "focusrealm_core",
+        "headerTag": "08 / 12",
+        "eyebrow": "AUTHOR PORTAL",
+        "title": "Authored once by your team. Published to the properties you choose.",
+        "subtitle": "Turn static PDF checklists into interactive, time-bound floor workflows across your portfolio.",
+        "footerNote": "Mise Standards Authoring Engine",
+        "layoutType": "author_experience",
+        "cards": [
+          {
+            "id": "s8-screen",
+            "title": "SOP Authoring Studio",
+            "description": "Clean standards authoring interface with real-time field validation.",
+            "imageUrl": "/assets/p9_img1.jpeg",
+            "imageCaption": "Standards authoring and workflow editor"
+          },
+          {
+            "id": "s8-p1",
+            "number": "1",
+            "title": "Enter your standard",
+            "description": "Title, code, role, target time and search tags, as your team already defines them. Drafts remain in the editor until published."
+          },
+          {
+            "id": "s8-p2",
+            "number": "2",
+            "title": "Publish and track",
+            "description": "Each published version links to active tasks. Historical records stay immutable with full author visibility."
+          }
+        ]
+      },
+      {
+        "id": "slide-9",
+        "slideNumber": 9,
+        "section": "focusrealm_core",
+        "headerTag": "09 / 12",
+        "eyebrow": "WHAT CHANGES",
+        "title": "Six outcomes, measured against your own baseline.",
+        "subtitle": "Measured against your own operational baseline, not an abstract industry average.",
+        "footerNote": "Demonstrated operational improvements in live shifts",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s9-c1",
+            "number": "01",
+            "title": "Your standard runs after you leave",
+            "description": "The routine your leadership team sets at a property carries on in the same form once they move to the next property."
+          },
+          {
+            "id": "s9-c2",
+            "number": "02",
+            "title": "Evidence you can show an owner",
+            "description": "An incontrovertible record of what was completed on the floor, ready whenever you report on property performance."
+          },
+          {
+            "id": "s9-c3",
+            "number": "03",
+            "title": "One standard, many property types",
+            "description": "Resorts, villas, and destination spas each run their own adapted version of a core standard written once by your team."
+          },
+          {
+            "id": "s9-c4",
+            "number": "04",
+            "title": "A new mandate starts on your standard",
+            "description": "When taking on a new management mandate, your standard is live on the floor from the very first shift."
+          },
+          {
+            "id": "s9-c5",
+            "number": "05",
+            "title": "Supervision without more supervisors",
+            "description": "Completion is verified from a screen rather than solely on foot, supporting the lean management teams you plan for."
+          },
+          {
+            "id": "s9-c6",
+            "number": "06",
+            "title": "Earlier correction, fewer recoveries",
+            "description": "Missed steps surface in real time during the shift while they can still be resolved, rather than later in an unhappy guest review."
+          }
+        ]
+      },
+      {
+        "id": "slide-10",
+        "slideNumber": 10,
+        "section": "personalized",
+        "headerTag": "10 / 12",
+        "eyebrow": "UNDERSTANDING YOUR BUSINESS",
+        "title": "A portfolio you run, property by property.",
+        "subtitle": "Operational footprint, property assets, and service philosophy of Bvlgari Hotel Tokyo.",
+        "footerNote": "Researched from official property sources and verified operational records",
+        "layoutType": "company_overview",
+        "customBrandTheme": {
+          "primary": "#4a2c2a",
+          "secondary": "#0f172a",
+          "accent": "#d4a373",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s10-c1",
+            "number": "01",
+            "title": "Business Model & Mandate",
+            "description": "Boutique & Luxury Hotel Operations. Delivering tailored guest hospitality with high standards of operational discipline."
+          },
+          {
+            "id": "s10-c2",
+            "number": "02",
+            "title": "Properties & Locations",
+            "description": "Bvlgari Hotel Tokyo Flagship Property (Luxury Hotel & Suites) • Bvlgari Hotel Tokyo Boutique Retreat (Resort & Wellness Spa)",
+            "sourceUrl": "https://bulgarihotels.com"
+          },
+          {
+            "id": "s10-c3",
+            "number": "03",
+            "title": "Standards of Your Own",
+            "description": "Proven procedures adapted to each client and property environment, rather than rigid, one-size-fits-all checklists."
+          },
+          {
+            "id": "s10-c4",
+            "number": "04",
+            "title": "What This Means for Service",
+            "description": "With embedded teams across varied asset formats, maintaining identical room-readiness standards requires seamless visibility between leadership and the floor."
+          }
+        ]
+      },
+      {
+        "id": "slide-11",
+        "slideNumber": 11,
+        "section": "personalized",
+        "headerTag": "11 / 12",
+        "eyebrow": "WORKING TOGETHER",
+        "title": "Where we see a direct fit for Bvlgari Hotel Tokyo.",
+        "subtitle": "The execution layer behind your standards — without adding executive travel or extra headcount.",
+        "footerNote": "FocusRealm Tailored Solution Fit",
+        "layoutType": "fit_columns",
+        "customBrandTheme": {
+          "primary": "#4a2c2a",
+          "secondary": "#0f172a",
+          "accent": "#d4a373",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s11-c1",
+            "number": "01",
+            "title": "Execution layer for your standards",
+            "description": "Your procedures running on the floor across Bvlgari Hotel Tokyo Flagship Property, without senior management walking every floor."
+          },
+          {
+            "id": "s11-c2",
+            "number": "02",
+            "title": "Evidence for your owner reporting",
+            "description": "An indisputable digital record of what was completed on every shift, ready whenever you report to hotel asset owners."
+          },
+          {
+            "id": "s11-c3",
+            "number": "03",
+            "title": "A product shaped alongside operators",
+            "description": "We partner closely with hospitality teams to ensure the software serves the floor staff rather than becoming another cumbersome administrative chore."
+          }
+        ]
+      },
+      {
+        "id": "slide-12",
+        "slideNumber": 12,
+        "section": "personalized",
+        "headerTag": "12 / 12",
+        "eyebrow": "NEXT STEP",
+        "title": "We would be glad to begin with one property.",
+        "subtitle": "With your permission, we would like to arrange a demonstration at a property of your choosing, alongside the manager and one member of the team.",
+        "footerNote": "Thank you for your time. We welcome the chance to work alongside you.",
+        "layoutType": "pilot_steps",
+        "customBrandTheme": {
+          "primary": "#4a2c2a",
+          "secondary": "#0f172a",
+          "accent": "#d4a373",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s12-c1",
+            "number": "1",
+            "title": "A property and a week that suit you",
+            "description": "Chosen entirely by your team — whether a high-occupancy resort or boutique property."
+          },
+          {
+            "id": "s12-c2",
+            "number": "2",
+            "title": "One manager and one team member",
+            "description": "A focused, non-disruptive footprint to evaluate usability directly on the floor."
+          },
+          {
+            "id": "s12-c3",
+            "number": "3",
+            "title": "Live shift run together in person",
+            "description": "Experience room assignment, task confirmation, and supervisor review in live operation."
+          }
+        ]
+      }
+    ],
+    "theme": {
+      "focusRealmPalette": {
+        "primary": "#102f35",
+        "secondary": "#173d45",
+        "accent": "#3db89e",
+        "background": "#f5f2e9",
+        "surface": "#ffffff",
+        "text": "#102f35",
+        "textMuted": "#577176",
+        "border": "#d8d2c4"
+      },
+      "targetBrandPalette": {
+        "primary": "#4a2c2a",
+        "secondary": "#0f172a",
+        "accent": "#d4a373",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      }
+    }
+  },
+  {
+    "id": "deck-1792776125467",
+    "companyName": "Marriot Hotels",
+    "websiteUrl": "",
+    "createdAt": "2026-10-23T17:22:05.467Z",
+    "updatedAt": "2026-10-24T06:26:50.351Z",
+    "companyDossier": {
+      "name": "Marriot Hotels",
+      "websiteUrl": "",
+      "tagline": "Excellence in Hospitality",
+      "businessModel": "Boutique & Luxury Hotel Operations",
+      "properties": [
+        {
+          "name": "Marriot Hotels Flagship Property",
+          "location": "Primary Destination",
+          "type": "Luxury Hotel & Suites"
+        },
+        {
+          "name": "Marriot Hotels Boutique Retreat",
+          "location": "Regional Asset",
+          "type": "Resort & Wellness Spa"
+        }
+      ],
+      "operationalContext": [
+        "Dedicated hospitality operations across 2 identified properties",
+        "Focus on consistent guest satisfaction and room delivery standards",
+        "Need for real-time task verification across housekeeping and maintenance teams",
+        "Commitment to protecting property asset value and owner reporting clarity"
+      ],
+      "brandPalette": {
+        "primary": "#1f2937",
+        "secondary": "#0f172a",
+        "accent": "#3b82f6",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      },
+      "sources": [],
+      "factsAndHypotheses": [
+        {
+          "id": "f1",
+          "statement": "Marriot Hotels operates luxury hospitality properties with an emphasis on tailored guest experiences.",
+          "type": "verified_fact",
+          "sourceTitle": "Marriot Hotels Verified Public Information",
+          "relevance": "Establishes verified brand positioning and target demographic."
+        },
+        {
+          "id": "h1",
+          "statement": "With multiple properties and varied accommodation types, maintaining identical room-readiness standards depends on physical supervision rounds.",
+          "type": "inferred_hypothesis",
+          "relevance": "Identifies the supervisor bottleneck where managers cannot inspect every turnover room on foot."
+        },
+        {
+          "id": "h2",
+          "statement": "Asset owners and leadership require transparent shift verification and audit-ready records of maintenance and housekeeping.",
+          "type": "inferred_hypothesis",
+          "relevance": "Connects to FocusRealms automated proof-of-work reporting."
+        }
+      ],
+      "userNotes": ""
+    },
+    "slides": [
+      {
+        "id": "slide-1",
+        "slideNumber": 1,
+        "section": "focusrealm_core",
+        "headerTag": "01 / 12",
+        "eyebrow": "HOTEL SERVICE EXECUTION PLATFORM",
+        "title": "Ownership you can see. Accountability you can prove.",
+        "subtitle": "An executive conversation on service execution, prepared for Marriot Hotels.",
+        "footerNote": "Mise is care.",
+        "layoutType": "intro_title",
+        "cards": [
+          {
+            "id": "s1-c1",
+            "title": "Execution on the Floor",
+            "description": "Carrying proven SOPs into live shifts with room-by-room dispatch and timed windows.",
+            "badge": "Core Platform"
+          },
+          {
+            "id": "s1-c2",
+            "title": "Proof for Leadership",
+            "description": "Tamper-proof photo evidence and instant exception alerts for lean supervisory teams.",
+            "badge": "Accountability"
+          },
+          {
+            "id": "s1-c3",
+            "title": "Audit & Owner Records",
+            "description": "Immutable records for brand audits, owner reviews, and consistent 5-star delivery.",
+            "badge": "Assurance"
+          }
+        ]
+      },
+      {
+        "id": "slide-2",
+        "slideNumber": 2,
+        "section": "focusrealm_core",
+        "headerTag": "02 / 12",
+        "eyebrow": "OUR TEAM",
+        "title": "The people building Mise.",
+        "subtitle": "Built by hospitality operators and engineers with direct floor experience.",
+        "footerNote": "FocusRealm Executive Team",
+        "layoutType": "team_portraits",
+        "cards": [
+          {
+            "id": "s2-c1",
+            "title": "Sehej Sharma",
+            "description": "Chief Executive Officer. Driving platform strategy, luxury hospitality partnerships, and enterprise vision.",
+            "imageUrl": "/assets/p2_img1.png",
+            "badge": "Chief Executive Officer"
+          },
+          {
+            "id": "s2-c2",
+            "title": "Ali Electricwala",
+            "description": "Chief Operating Officer. Leading floor operations, property onboarding, and staff adoption.",
+            "imageUrl": "/assets/p2_img2.png",
+            "badge": "Chief Operating Officer"
+          },
+          {
+            "id": "s2-c3",
+            "title": "Aditya Mishra",
+            "description": "Chief Technology Officer. Architecting real-time shift systems, audit trails, and offline resilience.",
+            "imageUrl": "/assets/p2_img3.png",
+            "badge": "Chief Technology Officer"
+          }
+        ]
+      },
+      {
+        "id": "slide-3",
+        "slideNumber": 3,
+        "section": "focusrealm_core",
+        "headerTag": "03 / 12",
+        "eyebrow": "ADVISORY BOARD",
+        "title": "The people guiding us.",
+        "subtitle": "Decades of luxury training, standards development, and operational excellence.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "advisors_list",
+        "cards": [
+          {
+            "id": "s3-c1",
+            "title": "Renu Mehra",
+            "description": "Luxury & Celebrity Image Consultant & Corporate Trainer. Specializes in luxury etiquette, grooming, and 5-star brand identity.",
+            "imageUrl": "/assets/p3_img1.png",
+            "badge": "Industry Advisor"
+          },
+          {
+            "id": "s3-c2",
+            "title": "Parul Sharma",
+            "description": "Master Hospitality Trainer & Quality Auditor. Trained hotel staff for over 20 years in floor SOP discipline across premier chains.",
+            "imageUrl": "/assets/p3_img2.png",
+            "badge": "Industry Advisor"
+          }
+        ]
+      },
+      {
+        "id": "slide-4",
+        "slideNumber": 4,
+        "section": "focusrealm_core",
+        "headerTag": "04 / 12",
+        "eyebrow": "INDUSTRY CONTEXT",
+        "title": "Six challenges we hear across the industry.",
+        "subtitle": "Why standard operating procedures fail between the binder and the daily shift.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s4-c1",
+            "number": "01",
+            "title": "Supervisor Bottleneck",
+            "description": "Supervision happens in person. However capable a manager is, nobody can be on every floor or inspect every room at once."
+          },
+          {
+            "id": "s4-c2",
+            "number": "02",
+            "title": "Ghost SOP",
+            "description": "A carefully written procedure sits in a folder or binder, while daily practice gradually and silently moves away from it."
+          },
+          {
+            "id": "s4-c3",
+            "number": "03",
+            "title": "Invisible Performance Gap",
+            "description": "From head office, a strong shift and a difficult one look alike. Good work goes unrecognised, and small slips surface late."
+          },
+          {
+            "id": "s4-c4",
+            "number": "04",
+            "title": "Attrition Bleed",
+            "description": "When staff are not set up to succeed with clear expectations, they move on. Hard-won experience leaves with them, and recruitment restarts."
+          },
+          {
+            "id": "s4-c5",
+            "number": "05",
+            "title": "Star Rating Ceiling",
+            "description": "Consistency is what lifts ratings and reviews. Without it, a property can plateau despite the individual effort of its teams."
+          },
+          {
+            "id": "s4-c6",
+            "number": "06",
+            "title": "Audit Ambush",
+            "description": "Owners and brand reviews ask for evidence. Without a record kept as the work happens, it has to be painfully assembled afterwards."
+          }
+        ]
+      },
+      {
+        "id": "slide-5",
+        "slideNumber": 5,
+        "section": "focusrealm_core",
+        "headerTag": "05 / 12",
+        "eyebrow": "HOW MISE WORKS",
+        "title": "Your standards, implemented. Executed on every floor.",
+        "subtitle": "Mise does not rewrite your standards. It implements the standards your team has already proven.",
+        "footerNote": "Mise Architecture Overview",
+        "layoutType": "workflow_overview",
+        "cards": [
+          {
+            "id": "s5-step1",
+            "number": "1",
+            "title": "Your standard",
+            "description": "The proven procedures your team already trusts, carried directly into Mise without alteration.",
+            "badge": "Step 1"
+          },
+          {
+            "id": "s5-step2",
+            "number": "2",
+            "title": "Implemented as timed tasks",
+            "description": "Each standard becomes a task for the right role, in the right room, with a defined execution window.",
+            "badge": "Step 2"
+          },
+          {
+            "id": "s5-step3",
+            "number": "3",
+            "title": "Executed on staff phone",
+            "description": "Staff complete each step on their phone, with photo evidence where your standard requires it.",
+            "badge": "Step 3"
+          },
+          {
+            "id": "s5-step4",
+            "number": "4",
+            "title": "Evidence on record",
+            "description": "A tamper-proof service record that supports manager review, owner reporting and audit.",
+            "badge": "Step 4"
+          }
+        ]
+      },
+      {
+        "id": "slide-6",
+        "slideNumber": 6,
+        "section": "focusrealm_core",
+        "headerTag": "06 / 12",
+        "eyebrow": "ON THE FLOOR",
+        "title": "What the staff member sees: her rooms, her shift, one screen.",
+        "subtitle": "Clear room assignment, sequential timed windows, and instant SOP checklists on staff phones.",
+        "footerNote": "Mise Mobile Floor Application",
+        "layoutType": "staff_experience",
+        "cards": [
+          {
+            "id": "s6-screen",
+            "title": "Staff Mobile Screen",
+            "description": "Mobile shift execution interface showing room assignments and timed execution windows.",
+            "imageUrl": "/assets/p7_img1.png",
+            "imageCaption": "Live shift view for room attendants"
+          },
+          {
+            "id": "s6-f1",
+            "number": "01",
+            "title": "Shift at a glance",
+            "description": "Scheduled hours, check-in status and unassigned time for the shift are shown together."
+          },
+          {
+            "id": "s6-f2",
+            "number": "02",
+            "title": "Rooms in sequence",
+            "description": "Each assigned room is listed with its time window. One outside the shift is flagged and kept separate from hours."
+          },
+          {
+            "id": "s6-f3",
+            "number": "03",
+            "title": "Time stated plainly",
+            "description": "Unassigned time is shown separately from break time, so the schedule is never misread."
+          },
+          {
+            "id": "s6-f4",
+            "number": "04",
+            "title": "Four places, nothing more",
+            "description": "Today, My shift, My log and Guides: the only screens a staff member needs during a shift."
+          }
+        ]
+      },
+      {
+        "id": "slide-7",
+        "slideNumber": 7,
+        "section": "focusrealm_core",
+        "headerTag": "07 / 12",
+        "eyebrow": "SUPERVISION",
+        "title": "The manager’s view: assignments, exceptions and evidence.",
+        "subtitle": "Room assignments and blocked work resolved in seconds from one intuitive desktop dashboard.",
+        "footerNote": "Mise Manager Control Center",
+        "layoutType": "manager_experience",
+        "cards": [
+          {
+            "id": "s7-dashboard",
+            "title": "Manager Supervision Dashboard",
+            "description": "Shift management control center with real-time room dispatch and attendance verification.",
+            "imageUrl": "/assets/p8_img1.png",
+            "imageCaption": "Real-time floor supervision dashboard"
+          },
+          {
+            "id": "s7-p1",
+            "title": "Choose the shift",
+            "description": "Morning, afternoon and night shifts, each with its staff target and room count."
+          },
+          {
+            "id": "s7-p2",
+            "title": "Assign and clear",
+            "description": "Room assignments and blocked work are resolved from one unified control screen."
+          },
+          {
+            "id": "s7-p3",
+            "title": "Unknown is not absent",
+            "description": "Attendance not yet confirmed is shown as unknown, never prematurely marked as absent or late."
+          }
+        ]
+      },
+      {
+        "id": "slide-8",
+        "slideNumber": 8,
+        "section": "focusrealm_core",
+        "headerTag": "08 / 12",
+        "eyebrow": "AUTHOR PORTAL",
+        "title": "Authored once by your team. Published to the properties you choose.",
+        "subtitle": "Turn static PDF checklists into interactive, time-bound floor workflows across your portfolio.",
+        "footerNote": "Mise Standards Authoring Engine",
+        "layoutType": "author_experience",
+        "cards": [
+          {
+            "id": "s8-screen",
+            "title": "SOP Authoring Studio",
+            "description": "Clean standards authoring interface with real-time field validation.",
+            "imageUrl": "/assets/p9_img1.jpeg",
+            "imageCaption": "Standards authoring and workflow editor"
+          },
+          {
+            "id": "s8-p1",
+            "number": "1",
+            "title": "Enter your standard",
+            "description": "Title, code, role, target time and search tags, as your team already defines them. Drafts remain in the editor until published."
+          },
+          {
+            "id": "s8-p2",
+            "number": "2",
+            "title": "Publish and track",
+            "description": "Each published version is linked to every task that uses it, so a later change does not alter work already recorded. Use and verified completions are visible to the author."
+          }
+        ]
+      },
+      {
+        "id": "slide-9",
+        "slideNumber": 9,
+        "section": "focusrealm_core",
+        "headerTag": "09 / 12",
+        "eyebrow": "WHAT CHANGES",
+        "title": "Six outcomes, measured against your own baseline.",
+        "subtitle": "Measured against your own operational baseline, not an abstract industry average.",
+        "footerNote": "Demonstrated operational improvements in live shifts",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s9-c1",
+            "number": "01",
+            "title": "Your standard runs after you leave",
+            "description": "The routine your leadership team sets at a property carries on in the same form once they move to the next property."
+          },
+          {
+            "id": "s9-c2",
+            "number": "02",
+            "title": "Evidence you can show an owner",
+            "description": "An incontrovertible record of what was completed on the floor, ready whenever you report on property performance."
+          },
+          {
+            "id": "s9-c3",
+            "number": "03",
+            "title": "One standard, many property types",
+            "description": "Resorts, villas, and destination spas each run their own adapted version of a core standard written once by your team."
+          },
+          {
+            "id": "s9-c4",
+            "number": "04",
+            "title": "A new mandate starts on your standard",
+            "description": "When taking on a new management mandate, your standard is live on the floor from the very first shift."
+          },
+          {
+            "id": "s9-c5",
+            "number": "05",
+            "title": "Supervision without more supervisors",
+            "description": "Completion is verified from a screen rather than solely on foot, supporting the lean management teams you plan for."
+          },
+          {
+            "id": "s9-c6",
+            "number": "06",
+            "title": "Earlier correction, fewer recoveries",
+            "description": "Missed steps surface in real time during the shift while they can still be resolved, rather than later in an unhappy guest review."
+          }
+        ]
+      },
+      {
+        "id": "slide-10",
+        "slideNumber": 10,
+        "section": "personalized",
+        "headerTag": "10 / 12",
+        "eyebrow": "UNDERSTANDING YOUR BUSINESS",
+        "title": "A portfolio you run, property by property.",
+        "subtitle": "Operational footprint, property assets, and service philosophy of Marriot Hotels.",
+        "footerNote": "Researched from official property sources and verified operational records",
+        "layoutType": "company_overview",
+        "customBrandTheme": {
+          "primary": "#1f2937",
+          "secondary": "#0f172a",
+          "accent": "#3b82f6",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s10-c1",
+            "number": "01",
+            "title": "Business Model & Mandate",
+            "description": "Boutique & Luxury Hotel Operations. Delivering tailored guest hospitality with high standards of operational discipline."
+          },
+          {
+            "id": "s10-c2",
+            "number": "02",
+            "title": "Properties & Locations",
+            "description": "Marriot Hotels Flagship Property (Luxury Hotel & Suites, Primary Destination) • Marriot Hotels Boutique Retreat (Resort & Wellness Spa, Regional Asset)"
+          },
+          {
+            "id": "s10-c3",
+            "number": "03",
+            "title": "Standards of Your Own",
+            "description": "Proven procedures adapted to each client and property environment, rather than rigid, one-size-fits-all checklists."
+          },
+          {
+            "id": "s10-c4",
+            "number": "04",
+            "title": "What This Means for Service",
+            "description": "With embedded teams across varied asset formats, maintaining identical room-readiness standards requires seamless visibility between leadership and the floor."
+          }
+        ]
+      },
+      {
+        "id": "slide-11",
+        "slideNumber": 11,
+        "section": "personalized",
+        "headerTag": "11 / 12",
+        "eyebrow": "WORKING TOGETHER",
+        "title": "Where we see a direct fit for Marriot Hotels.",
+        "subtitle": "The execution layer behind your standards — without adding executive travel or extra headcount.",
+        "footerNote": "FocusRealm Tailored Solution Fit",
+        "layoutType": "fit_columns",
+        "customBrandTheme": {
+          "primary": "#1f2937",
+          "secondary": "#0f172a",
+          "accent": "#3b82f6",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s11-c1",
+            "number": "01",
+            "title": "The execution layer behind your standards",
+            "description": "Your procedures running on the floor across Marriot Hotels Flagship Property and Marriot Hotels Boutique Retreat, without requiring senior management to walk every corridor."
+          },
+          {
+            "id": "s11-c2",
+            "number": "02",
+            "title": "Evidence for your owner reporting",
+            "description": "An indisputable digital record of what was completed on every shift, ready whenever you report to hotel asset owners."
+          },
+          {
+            "id": "s11-c3",
+            "number": "03",
+            "title": "A product shaped alongside operators",
+            "description": "We partner closely with hospitality teams to ensure the software serves the floor staff rather than becoming another cumbersome administrative chore."
+          }
+        ]
+      },
+      {
+        "id": "slide-12",
+        "slideNumber": 12,
+        "section": "personalized",
+        "headerTag": "12 / 12",
+        "eyebrow": "NEXT STEP",
+        "title": "We would be glad to begin with one property.",
+        "subtitle": "With your permission, we would like to arrange a demonstration at a property of your choosing, alongside the manager and one member of the team.",
+        "footerNote": "Thank you for your time. We welcome the chance to work alongside you.",
+        "layoutType": "pilot_steps",
+        "customBrandTheme": {
+          "primary": "#1f2937",
+          "secondary": "#0f172a",
+          "accent": "#3b82f6",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s12-c1",
+            "number": "1",
+            "title": "A property and a week that suit you",
+            "description": "Chosen entirely by your team — whether a high-occupancy resort or boutique property."
+          },
+          {
+            "id": "s12-c2",
+            "number": "2",
+            "title": "One manager and one team member",
+            "description": "A focused, non-disruptive footprint to evaluate usability directly on the floor."
+          },
+          {
+            "id": "s12-c3",
+            "number": "3",
+            "title": "We attend in person and run a single shift together",
+            "description": "Experience room assignment, task confirmation, and supervisor review in live operation."
+          }
+        ]
+      }
+    ],
+    "theme": {
+      "focusRealmPalette": {
+        "primary": "#102f35",
+        "secondary": "#173d45",
+        "accent": "#3db89e",
+        "background": "#f5f2e9",
+        "surface": "#ffffff",
+        "text": "#102f35",
+        "textMuted": "#577176",
+        "border": "#d8d2c4"
+      },
+      "targetBrandPalette": {
+        "primary": "#1f2937",
+        "secondary": "#0f172a",
+        "accent": "#3b82f6",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      }
+    }
+  },
+  {
+    "id": "deck-1792765015074",
+    "companyName": "Soneva Resorts",
+    "websiteUrl": "https://soneva.com",
+    "createdAt": "2026-10-23T14:16:55.074Z",
+    "updatedAt": "2026-10-24T08:55:57.611Z",
+    "companyDossier": {
+      "name": "Soneva Resorts",
+      "websiteUrl": "https://soneva.com",
+      "tagline": "Inspiring a Lifetime of Rare Experiences",
+      "businessModel": "Ultra-Luxury Sustainable Resort Operator",
+      "properties": [
+        {
+          "name": "Soneva Fushi",
+          "location": "Baa Atoll, Maldives",
+          "type": "Eco-Luxury Island Resort"
+        },
+        {
+          "name": "Soneva Jani",
+          "location": "Noonu Atoll, Maldives",
+          "type": "Overwater Villa Resort"
+        },
+        {
+          "name": "Soneva Kiri",
+          "location": "Koh Kood, Thailand",
+          "type": "Pristine Rainforest Resort"
+        }
+      ],
+      "operationalContext": [
+        "Barefoot luxury concept with strict environmental and sustainability protocols",
+        "Expansive island villas requiring decentralized housekeeping and butler (\"Barefoot Guardian\") management",
+        "High logistical complexity across island ecosystems with decentralized staff quarters",
+        "Zero-waste and eco-standard verification required across daily shifts"
+      ],
+      "brandPalette": {
+        "primary": "#065f46",
+        "secondary": "#0f172a",
+        "accent": "#0d9488",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      },
+      "sources": [
+        {
+          "title": "Soneva Resorts Official Website",
+          "url": "https://soneva.com",
+          "domain": "soneva.com",
+          "snippet": "Live research portal for Soneva Resorts hotel operations.",
+          "accessedAt": "2026-10-23T14:16:55.072Z",
+          "category": "official_site"
+        },
+        {
+          "title": "Soneva Resorts & Sustainability Philosophy",
+          "url": "https://soneva.com/about",
+          "domain": "soneva.com",
+          "snippet": "Pioneering slow life luxury across secluded island and forest retreats with strict sustainability standards.",
+          "accessedAt": "2026-10-23T14:11:00.542Z",
+          "category": "official_site"
+        }
+      ],
+      "factsAndHypotheses": [
+        {
+          "id": "s1",
+          "statement": "Operates expansive overwater and island villas requiring autonomous butler and maintenance workflows.",
+          "type": "verified_fact",
+          "sourceUrl": "https://soneva.com/villas",
+          "sourceTitle": "Soneva Villa Portfolio",
+          "relevance": "High geographical dispersion of suites elevates the need for asynchronous task confirmation."
+        },
+        {
+          "id": "sh1",
+          "statement": "Sustainability audits and waste sorting procedures require ongoing verifiable proof on shift.",
+          "type": "inferred_hypothesis",
+          "relevance": "Photo verification at task completion provides compliance records for eco-certifications."
+        }
+      ],
+      "userNotes": "Ultra-luxury island villas & eco-sustainability standards"
+    },
+    "slides": [
+      {
+        "id": "slide-1",
+        "slideNumber": 1,
+        "section": "focusrealm_core",
+        "headerTag": "01 / 12",
+        "eyebrow": "HOTEL SERVICE EXECUTION PLATFORM",
+        "title": "Ownership you can see. Accountability you can prove.",
+        "subtitle": "An executive conversation on service execution, prepared for Soneva Resorts.",
+        "footerNote": "Mise is care.",
+        "layoutType": "intro_title",
+        "cards": [
+          {
+            "id": "s1-c1",
+            "title": "Execution on the Floor",
+            "description": "Carrying proven SOPs into live shifts with room-by-room dispatch and timed windows.",
+            "badge": "Core Platform"
+          },
+          {
+            "id": "s1-c2",
+            "title": "Proof for Leadership",
+            "description": "Tamper-proof photo evidence and instant exception alerts for lean supervisory teams.",
+            "badge": "Accountability"
+          },
+          {
+            "id": "s1-c3",
+            "title": "Audit & Owner Records",
+            "description": "Immutable records for brand audits, owner reviews, and consistent 5-star delivery.",
+            "badge": "Assurance"
+          }
+        ]
+      },
+      {
+        "id": "slide-2",
+        "slideNumber": 2,
+        "section": "focusrealm_core",
+        "headerTag": "02 / 12",
+        "eyebrow": "OUR TEAM",
+        "title": "The people building Mise.",
+        "subtitle": "Built by hospitality operators and engineers with direct floor experience.",
+        "footerNote": "FocusRealm Executive Team",
+        "layoutType": "team_portraits",
+        "cards": [
+          {
+            "id": "s2-c1",
+            "title": "Sehej Sharma",
+            "description": "Chief Executive Officer. Driving platform strategy, luxury hospitality partnerships, and enterprise vision.",
+            "imageUrl": "/assets/p2_img1.png",
+            "badge": "Chief Executive Officer"
+          },
+          {
+            "id": "s2-c2",
+            "title": "Ali Electricwala",
+            "description": "Chief Operating Officer. Leading floor operations, property onboarding, and staff adoption.",
+            "imageUrl": "/assets/p2_img2.png",
+            "badge": "Chief Operating Officer"
+          },
+          {
+            "id": "s2-c3",
+            "title": "Aditya Mishra",
+            "description": "Chief Technology Officer. Architecting real-time shift systems, audit trails, and offline resilience.",
+            "imageUrl": "/assets/p2_img3.png",
+            "badge": "Chief Technology Officer"
+          }
+        ]
+      },
+      {
+        "id": "slide-3",
+        "slideNumber": 3,
+        "section": "focusrealm_core",
+        "headerTag": "03 / 12",
+        "eyebrow": "ADVISORY BOARD",
+        "title": "The people guiding us.",
+        "subtitle": "Decades of luxury training, standards development, and operational excellence.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "advisors_list",
+        "cards": [
+          {
+            "id": "s3-c1",
+            "title": "Renu Mehra",
+            "description": "Luxury & Celebrity Image Consultant & Corporate Trainer. Specializes in luxury etiquette, grooming, and 5-star brand identity.",
+            "imageUrl": "/assets/p3_img1.png",
+            "badge": "Industry Advisor"
+          },
+          {
+            "id": "s3-c2",
+            "title": "Parul Sharma",
+            "description": "Master Hospitality Trainer & Quality Auditor. Trained hotel staff for over 20 years in floor SOP discipline across premier chains.",
+            "imageUrl": "/assets/p3_img2.png",
+            "badge": "Industry Advisor"
+          }
+        ]
+      },
+      {
+        "id": "slide-4",
+        "slideNumber": 4,
+        "section": "focusrealm_core",
+        "headerTag": "04 / 12",
+        "eyebrow": "INDUSTRY CONTEXT",
+        "title": "Six challenges we hear across the industry.",
+        "subtitle": "Why standard operating procedures fail between the binder and the daily shift.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s4-c1",
+            "number": "01",
+            "title": "Supervisor Bottleneck",
+            "description": "Supervision happens in person. However capable a manager is, nobody can be on every floor or inspect every room at once."
+          },
+          {
+            "id": "s4-c2",
+            "number": "02",
+            "title": "Ghost SOP",
+            "description": "A carefully written procedure sits in a folder or binder, while daily practice gradually and silently moves away from it."
+          },
+          {
+            "id": "s4-c3",
+            "number": "03",
+            "title": "Invisible Performance Gap",
+            "description": "From head office, a strong shift and a difficult one look alike. Good work goes unrecognised, and small slips surface late."
+          },
+          {
+            "id": "s4-c4",
+            "number": "04",
+            "title": "Attrition Bleed",
+            "description": "When staff are not set up to succeed with clear expectations, they move on. Hard-won experience leaves with them, and recruitment restarts."
+          },
+          {
+            "id": "s4-c5",
+            "number": "05",
+            "title": "Star Rating Ceiling",
+            "description": "Consistency is what lifts ratings and reviews. Without it, a property can plateau despite the individual effort of its teams."
+          },
+          {
+            "id": "s4-c6",
+            "number": "06",
+            "title": "Audit Ambush",
+            "description": "Owners and brand reviews ask for evidence. Without a record kept as the work happens, it has to be painfully assembled afterwards."
+          }
+        ]
+      },
+      {
+        "id": "slide-5",
+        "slideNumber": 5,
+        "section": "focusrealm_core",
+        "headerTag": "05 / 12",
+        "eyebrow": "HOW MISE WORKS",
+        "title": "Your standards, implemented. Executed on every floor.",
+        "subtitle": "Mise does not rewrite your standards. It implements the standards your team has already proven.",
+        "footerNote": "Mise Architecture Overview",
+        "layoutType": "workflow_overview",
+        "cards": [
+          {
+            "id": "s5-step1",
+            "number": "1",
+            "title": "Your standard",
+            "description": "The proven procedures your team already trusts, carried directly into Mise without alteration.",
+            "badge": "Step 1"
+          },
+          {
+            "id": "s5-step2",
+            "number": "2",
+            "title": "Implemented as timed tasks",
+            "description": "Each standard becomes a task for the right role, in the right room, with a defined execution window.",
+            "badge": "Step 2"
+          },
+          {
+            "id": "s5-step3",
+            "number": "3",
+            "title": "Executed on staff phone",
+            "description": "Staff complete each step on their phone, with photo evidence where your standard requires it.",
+            "badge": "Step 3"
+          },
+          {
+            "id": "s5-step4",
+            "number": "4",
+            "title": "Evidence on record",
+            "description": "A tamper-proof service record that supports manager review, owner reporting and audit.",
+            "badge": "Step 4"
+          }
+        ]
+      },
+      {
+        "id": "slide-6",
+        "slideNumber": 6,
+        "section": "focusrealm_core",
+        "headerTag": "06 / 12",
+        "eyebrow": "ON THE FLOOR",
+        "title": "What the staff member sees: her rooms, her shift, one screen.",
+        "subtitle": "Clear room assignment, sequential timed windows, and instant SOP checklists on staff phones.",
+        "footerNote": "Mise Mobile Floor Application",
+        "layoutType": "staff_experience",
+        "cards": [
+          {
+            "id": "s6-screen",
+            "title": "Staff Mobile Screen",
+            "description": "Mobile shift execution interface showing room assignments and timed execution windows.",
+            "imageUrl": "/assets/p7_img1.png",
+            "imageCaption": "Live shift view for room attendants"
+          },
+          {
+            "id": "s6-f1",
+            "number": "01",
+            "title": "Shift at a glance",
+            "description": "Scheduled hours, check-in status and unassigned time for the shift are shown together."
+          },
+          {
+            "id": "s6-f2",
+            "number": "02",
+            "title": "Rooms in sequence",
+            "description": "Each assigned room is listed with its time window. One outside the shift is flagged and kept separate from hours."
+          },
+          {
+            "id": "s6-f3",
+            "number": "03",
+            "title": "Time stated plainly",
+            "description": "Unassigned time is shown separately from break time, so the schedule is never misread."
+          },
+          {
+            "id": "s6-f4",
+            "number": "04",
+            "title": "Four places, nothing more",
+            "description": "Today, My shift, My log and Guides: the only screens a staff member needs during a shift"
+          }
+        ],
+        "lastEditedAt": "2026-10-24T08:55:57.372Z"
+      },
+      {
+        "id": "slide-7",
+        "slideNumber": 7,
+        "section": "focusrealm_core",
+        "headerTag": "07 / 12",
+        "eyebrow": "SUPERVISION",
+        "title": "The manager’s view: assignments, exceptions and evidence.",
+        "subtitle": "Room assignments and blocked work resolved in seconds from one intuitive desktop dashboard.",
+        "footerNote": "Mise Manager Control Center",
+        "layoutType": "manager_experience",
+        "cards": [
+          {
+            "id": "s7-dashboard",
+            "title": "Manager Supervision Dashboard",
+            "description": "Shift management control center with real-time room dispatch and attendance verification.",
+            "imageUrl": "/assets/p8_img1.png",
+            "imageCaption": "Real-time floor supervision dashboard"
+          },
+          {
+            "id": "s7-p1",
+            "title": "Choose the shift",
+            "description": "Morning, afternoon and night shifts, each with its staff target and room count."
+          },
+          {
+            "id": "s7-p2",
+            "title": "Assign and clear",
+            "description": "Room assignments and blocked work are resolved from one unified control screen."
+          },
+          {
+            "id": "s7-p3",
+            "title": "Unknown is not absent",
+            "description": "Attendance not yet confirmed is shown as unknown, never prematurely marked as absent or late."
+          }
+        ]
+      },
+      {
+        "id": "slide-8",
+        "slideNumber": 8,
+        "section": "focusrealm_core",
+        "headerTag": "08 / 12",
+        "eyebrow": "AUTHOR PORTAL",
+        "title": "Authored once by your team. Published to the properties you choose.",
+        "subtitle": "Turn static PDF checklists into interactive, time-bound floor workflows across your portfolio.",
+        "footerNote": "Mise Standards Authoring Engine",
+        "layoutType": "author_experience",
+        "cards": [
+          {
+            "id": "s8-screen",
+            "title": "SOP Authoring Studio",
+            "description": "Clean standards authoring interface with real-time field validation.",
+            "imageUrl": "/assets/p9_img1.jpeg",
+            "imageCaption": "Standards authoring and workflow editor"
+          },
+          {
+            "id": "s8-p1",
+            "number": "1",
+            "title": "Enter your standard",
+            "description": "Title, code, role, target time and search tags, as your team already defines them. Drafts remain in the editor until published."
+          },
+          {
+            "id": "s8-p2",
+            "number": "2",
+            "title": "Publish and track",
+            "description": "Each published version is linked to every task that uses it, so a later change does not alter work already recorded. Use and verified completions are visible to the author."
+          }
+        ]
+      },
+      {
+        "id": "slide-9",
+        "slideNumber": 9,
+        "section": "focusrealm_core",
+        "headerTag": "09 / 12",
+        "eyebrow": "WHAT CHANGES",
+        "title": "Six outcomes, measured against your own baseline.",
+        "subtitle": "Measured against your own operational baseline, not an abstract industry average.",
+        "footerNote": "Demonstrated operational improvements in live shifts",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s9-c1",
+            "number": "01",
+            "title": "Your standard runs after you leave",
+            "description": "The routine your leadership team sets at a property carries on in the same form once they move to the next property."
+          },
+          {
+            "id": "s9-c2",
+            "number": "02",
+            "title": "Evidence you can show an owner",
+            "description": "An incontrovertible record of what was completed on the floor, ready whenever you report on property performance."
+          },
+          {
+            "id": "s9-c3",
+            "number": "03",
+            "title": "One standard, many property types",
+            "description": "Resorts, villas, and destination spas each run their own adapted version of a core standard written once by your team."
+          },
+          {
+            "id": "s9-c4",
+            "number": "04",
+            "title": "A new mandate starts on your standard",
+            "description": "When taking on a new management mandate, your standard is live on the floor from the very first shift."
+          },
+          {
+            "id": "s9-c5",
+            "number": "05",
+            "title": "Supervision without more supervisors",
+            "description": "Completion is verified from a screen rather than solely on foot, supporting the lean management teams you plan for."
+          },
+          {
+            "id": "s9-c6",
+            "number": "06",
+            "title": "Earlier correction, fewer recoveries",
+            "description": "Missed steps surface in real time during the shift while they can still be resolved, rather than later in an unhappy guest review."
+          }
+        ]
+      },
+      {
+        "id": "slide-10",
+        "slideNumber": 10,
+        "section": "personalized",
+        "headerTag": "10 / 12",
+        "eyebrow": "UNDERSTANDING YOUR BUSINESS",
+        "title": "A portfolio you run, property by property.",
+        "subtitle": "Operational footprint, property assets, and service philosophy of Soneva Resorts.",
+        "footerNote": "Researched from official property sources and verified operational records",
+        "layoutType": "company_overview",
+        "customBrandTheme": {
+          "primary": "#065f46",
+          "secondary": "#0f172a",
+          "accent": "#0d9488",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0",
+          "isCustomized": true
+        },
+        "cards": [
+          {
+            "id": "s10-c1",
+            "number": "01",
+            "title": "Business Model & Mandate",
+            "description": "Ultra-Luxury Sustainable Resort Operator. Delivering tailored guest hospitality with high standards of operational discipline."
+          },
+          {
+            "id": "s10-c2",
+            "number": "02",
+            "title": "Properties & Locations",
+            "description": "Soneva Fushi (Eco-Luxury Island Resort, Baa Atoll, Maldives) • Soneva Jani (Overwater Villa Resort, Noonu Atoll, Maldives) • Soneva Kiri (Pristine Rainforest Resort, Koh Kood, Thailand)",
+            "sourceUrl": "https://soneva.com"
+          },
+          {
+            "id": "s10-c3",
+            "number": "03",
+            "title": "Standards of Your Own",
+            "description": "Proven procedures adapted to each client and property environment, rather than rigid, one-size-fits-all checklists."
+          },
+          {
+            "id": "s10-c4",
+            "number": "04",
+            "title": "What This Means for Service",
+            "description": "With embedded teams across varied asset formats, maintaining identical room-readiness standards requires seamless visibility between leadership and the floor."
+          }
+        ]
+      },
+      {
+        "id": "slide-11",
+        "slideNumber": 11,
+        "section": "personalized",
+        "headerTag": "11 / 12",
+        "eyebrow": "WORKING TOGETHER",
+        "title": "Where we see a direct fit for Soneva Resorts.",
+        "subtitle": "The execution layer behind your standards — without adding executive travel or extra headcount.",
+        "footerNote": "FocusRealm Tailored Solution Fit",
+        "layoutType": "fit_columns",
+        "customBrandTheme": {
+          "primary": "#065f46",
+          "secondary": "#0f172a",
+          "accent": "#0d9488",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0",
+          "isCustomized": true
+        },
+        "cards": [
+          {
+            "id": "s11-c1",
+            "number": "01",
+            "title": "The execution layer behind your standards",
+            "description": "Your procedures running on the floor across Soneva Fushi and Soneva Jani, without requiring senior management to walk every corridor."
+          },
+          {
+            "id": "s11-c2",
+            "number": "02",
+            "title": "Evidence for your owner reporting",
+            "description": "An indisputable digital record of what was completed on every shift, ready whenever you report to hotel asset owners."
+          },
+          {
+            "id": "s11-c3",
+            "number": "03",
+            "title": "A product shaped alongside operators",
+            "description": "We partner closely with hospitality teams to ensure the software serves the floor staff rather than becoming another cumbersome administrative chore."
+          }
+        ]
+      },
+      {
+        "id": "slide-12",
+        "slideNumber": 12,
+        "section": "personalized",
+        "headerTag": "12 / 12",
+        "eyebrow": "NEXT STEP",
+        "title": "We would be glad to begin with one property.",
+        "subtitle": "With your permission, we would like to arrange a demonstration at a property of your choosing, alongside the manager and one member of the team.",
+        "footerNote": "Thank you for your time. We welcome the chance to work alongside you.",
+        "layoutType": "pilot_steps",
+        "customBrandTheme": {
+          "primary": "#065f46",
+          "secondary": "#0f172a",
+          "accent": "#0d9488",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0",
+          "isCustomized": true
+        },
+        "cards": [
+          {
+            "id": "s12-c1",
+            "number": "1",
+            "title": "A property and a week that suit you",
+            "description": "Chosen entirely by your team — whether a high-occupancy resort or boutique property."
+          },
+          {
+            "id": "s12-c2",
+            "number": "2",
+            "title": "One manager and one team member",
+            "description": "A focused, non-disruptive footprint to evaluate usability directly on the floor."
+          },
+          {
+            "id": "s12-c3",
+            "number": "3",
+            "title": "We attend in person and run a single shift together",
+            "description": "Experience room assignment, task confirmation, and supervisor review in live operation."
+          }
+        ]
+      }
+    ],
+    "theme": {
+      "focusRealmPalette": {
+        "primary": "#1e40af",
+        "secondary": "#0f172a",
+        "accent": "#2563eb",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      },
+      "targetBrandPalette": {
+        "primary": "#065f46",
+        "secondary": "#0f172a",
+        "accent": "#0d9488",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0",
+        "isCustomized": true
+      }
+    }
+  },
+  {
+    "id": "deck-1792764617990",
+    "companyName": "The Oberoi Group",
+    "websiteUrl": "https://www.oberoihotels.com",
+    "createdAt": "2026-10-23T14:10:17.990Z",
+    "updatedAt": "2026-10-24T06:26:50.351Z",
+    "companyDossier": {
+      "name": "The Oberoi Group",
+      "websiteUrl": "https://www.oberoihotels.com",
+      "tagline": "Heartfelt Hospitality and Legendary Luxury",
+      "businessModel": "Ultra-Luxury Hotel & Resort Operator",
+      "properties": [
+        {
+          "name": "The Oberoi Udaivilas",
+          "location": "Udaipur, India",
+          "type": "Palace Resort"
+        },
+        {
+          "name": "The Oberoi Amarvilas",
+          "location": "Agra, India",
+          "type": "Luxury Monumental Resort"
+        },
+        {
+          "name": "The Oberoi Rajvilas",
+          "location": "Jaipur, India",
+          "type": "Heritage Resort"
+        },
+        {
+          "name": "The Oberoi Wildflower Hall",
+          "location": "Shimla, India",
+          "type": "Himalayan Luxury Resort"
+        }
+      ],
+      "operationalContext": [
+        "Uncompromising luxury standards with dedicated butler services and high staff-to-guest ratios",
+        "Rigorous internal training culture via Oberoi Centre of Learning & Development (OCLD)",
+        "High brand stakes: one missed detail impacts globally acclaimed 5-star TripAdvisor ratings",
+        "Need for seamless shift handovers across housekeeping, engineering, and dining"
+      ],
+      "brandPalette": {
+        "primary": "#854d0e",
+        "secondary": "#1c1917",
+        "accent": "#ca8a04",
+        "background": "#fafaf9",
+        "surface": "#ffffff",
+        "text": "#1c1917",
+        "textMuted": "#78716c",
+        "border": "#e7e5e4"
+      },
+      "sources": [
+        {
+          "title": "The Oberoi Group Official Properties & Heritage",
+          "url": "https://www.oberoihotels.com/about-us",
+          "domain": "oberoihotels.com",
+          "snippet": "Operating award-winning luxury hotels and resorts defined by meticulous standards and anticipatory service.",
+          "accessedAt": "2026-10-23T14:10:17.984Z",
+          "category": "official_site"
+        }
+      ],
+      "factsAndHypotheses": [
+        {
+          "id": "o1",
+          "statement": "Ranked repeatedly among the worlds best luxury hotel brands with meticulous service rituals.",
+          "type": "verified_fact",
+          "sourceUrl": "https://www.oberoihotels.com/about-us",
+          "sourceTitle": "Oberoi Brand Recognition",
+          "relevance": "Standard adherence is critical to maintaining industry-leading customer satisfaction."
+        },
+        {
+          "id": "oh1",
+          "statement": "Complex palace and resort layouts create significant transit times for floor supervisors conducting room inspections.",
+          "type": "inferred_hypothesis",
+          "relevance": "Mobile digital verification allows supervisors to inspect by exception rather than walking miles each day."
+        }
+      ]
+    },
+    "slides": [
+      {
+        "id": "slide-1",
+        "slideNumber": 1,
+        "section": "focusrealm_core",
+        "headerTag": "01 / 12",
+        "eyebrow": "HOTEL SERVICE EXECUTION PLATFORM",
+        "title": "Ownership you can see. Accountability you can prove.",
+        "subtitle": "An executive conversation on service execution, prepared for The Oberoi Group.",
+        "footerNote": "Mise is care.",
+        "layoutType": "intro_title",
+        "cards": [
+          {
+            "id": "s1-c1",
+            "title": "Execution on the Floor",
+            "description": "Carrying proven SOPs into live shifts with room-by-room dispatch and timed windows.",
+            "badge": "Core Platform"
+          },
+          {
+            "id": "s1-c2",
+            "title": "Proof for Leadership",
+            "description": "Tamper-proof photo evidence and instant exception alerts for lean supervisory teams.",
+            "badge": "Accountability"
+          },
+          {
+            "id": "s1-c3",
+            "title": "Audit & Owner Records",
+            "description": "Immutable records for brand audits, owner reviews, and consistent 5-star delivery.",
+            "badge": "Assurance"
+          }
+        ]
+      },
+      {
+        "id": "slide-2",
+        "slideNumber": 2,
+        "section": "focusrealm_core",
+        "headerTag": "02 / 12",
+        "eyebrow": "OUR TEAM",
+        "title": "The people building Mise.",
+        "subtitle": "Built by hospitality operators and engineers with direct floor experience.",
+        "footerNote": "FocusRealm Executive Team",
+        "layoutType": "team_portraits",
+        "cards": [
+          {
+            "id": "s2-c1",
+            "title": "Sehej Sharma",
+            "description": "Chief Executive Officer. Driving platform strategy, luxury hospitality partnerships, and enterprise vision.",
+            "imageUrl": "/assets/p2_img1.png",
+            "badge": "Chief Executive Officer"
+          },
+          {
+            "id": "s2-c2",
+            "title": "Ali Electricwala",
+            "description": "Chief Operating Officer. Leading floor operations, property onboarding, and staff adoption.",
+            "imageUrl": "/assets/p2_img2.png",
+            "badge": "Chief Operating Officer"
+          },
+          {
+            "id": "s2-c3",
+            "title": "Aditya Mishra",
+            "description": "Chief Technology Officer. Architecting real-time shift systems, audit trails, and offline resilience.",
+            "imageUrl": "/assets/p2_img3.png",
+            "badge": "Chief Technology Officer"
+          }
+        ]
+      },
+      {
+        "id": "slide-3",
+        "slideNumber": 3,
+        "section": "focusrealm_core",
+        "headerTag": "03 / 12",
+        "eyebrow": "ADVISORY BOARD",
+        "title": "The people guiding us.",
+        "subtitle": "Decades of luxury training, standards development, and operational excellence.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "advisors_list",
+        "cards": [
+          {
+            "id": "s3-c1",
+            "title": "Renu Mehra",
+            "description": "Luxury & Celebrity Image Consultant & Corporate Trainer. Specializes in luxury etiquette, grooming, and 5-star brand identity.",
+            "imageUrl": "/assets/p3_img1.png",
+            "badge": "Industry Advisor"
+          },
+          {
+            "id": "s3-c2",
+            "title": "Parul Sharma",
+            "description": "Master Hospitality Trainer & Quality Auditor. Trained hotel staff for over 20 years in floor SOP discipline across premier chains.",
+            "imageUrl": "/assets/p3_img2.png",
+            "badge": "Industry Advisor"
+          }
+        ]
+      },
+      {
+        "id": "slide-4",
+        "slideNumber": 4,
+        "section": "focusrealm_core",
+        "headerTag": "04 / 12",
+        "eyebrow": "INDUSTRY CONTEXT",
+        "title": "Six challenges we hear across the industry.",
+        "subtitle": "Why standard operating procedures fail between the binder and the daily shift.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s4-c1",
+            "number": "01",
+            "title": "Supervisor Bottleneck",
+            "description": "Supervision happens in person. However capable a manager is, nobody can be on every floor or inspect every room at once."
+          },
+          {
+            "id": "s4-c2",
+            "number": "02",
+            "title": "Ghost SOP",
+            "description": "A carefully written procedure sits in a folder or binder, while daily practice gradually and silently moves away from it."
+          },
+          {
+            "id": "s4-c3",
+            "number": "03",
+            "title": "Invisible Performance Gap",
+            "description": "From head office, a strong shift and a difficult one look alike. Good work goes unrecognised, and small slips surface late."
+          },
+          {
+            "id": "s4-c4",
+            "number": "04",
+            "title": "Attrition Bleed",
+            "description": "When staff are not set up to succeed with clear expectations, they move on. Hard-won experience leaves with them, and recruitment restarts."
+          },
+          {
+            "id": "s4-c5",
+            "number": "05",
+            "title": "Star Rating Ceiling",
+            "description": "Consistency is what lifts ratings and reviews. Without it, a property can plateau despite the individual effort of its teams."
+          },
+          {
+            "id": "s4-c6",
+            "number": "06",
+            "title": "Audit Ambush",
+            "description": "Owners and brand reviews ask for evidence. Without a record kept as the work happens, it has to be painfully assembled afterwards."
+          }
+        ]
+      },
+      {
+        "id": "slide-5",
+        "slideNumber": 5,
+        "section": "focusrealm_core",
+        "headerTag": "05 / 12",
+        "eyebrow": "HOW MISE WORKS",
+        "title": "Your standards, implemented. Executed on every floor.",
+        "subtitle": "Mise does not rewrite your standards. It implements the standards your team has already proven.",
+        "footerNote": "Mise Architecture Overview",
+        "layoutType": "workflow_overview",
+        "cards": [
+          {
+            "id": "s5-step1",
+            "number": "1",
+            "title": "Your standard",
+            "description": "The proven procedures your team already trusts, carried directly into Mise without alteration.",
+            "badge": "Step 1"
+          },
+          {
+            "id": "s5-step2",
+            "number": "2",
+            "title": "Implemented as timed tasks",
+            "description": "Each standard becomes a task for the right role, in the right room, with a defined execution window.",
+            "badge": "Step 2"
+          },
+          {
+            "id": "s5-step3",
+            "number": "3",
+            "title": "Executed on staff phone",
+            "description": "Staff complete each step on their phone, with photo evidence where your standard requires it.",
+            "badge": "Step 3"
+          },
+          {
+            "id": "s5-step4",
+            "number": "4",
+            "title": "Evidence on record",
+            "description": "A tamper-proof service record that supports manager review, owner reporting and audit.",
+            "badge": "Step 4"
+          }
+        ]
+      },
+      {
+        "id": "slide-6",
+        "slideNumber": 6,
+        "section": "focusrealm_core",
+        "headerTag": "06 / 12",
+        "eyebrow": "ON THE FLOOR",
+        "title": "What the staff member sees: her rooms, her shift, one screen.",
+        "subtitle": "Clear room assignment, sequential timed windows, and instant SOP checklists on staff phones.",
+        "footerNote": "Mise Mobile Floor Application",
+        "layoutType": "staff_experience",
+        "cards": [
+          {
+            "id": "s6-screen",
+            "title": "Staff Mobile Screen",
+            "description": "Mobile shift execution interface showing room assignments and timed execution windows.",
+            "imageUrl": "/assets/p7_img1.png",
+            "imageCaption": "Live shift view for room attendants"
+          },
+          {
+            "id": "s6-f1",
+            "number": "01",
+            "title": "Shift at a glance",
+            "description": "Scheduled hours, check-in status and unassigned time for the shift are shown together."
+          },
+          {
+            "id": "s6-f2",
+            "number": "02",
+            "title": "Rooms in sequence",
+            "description": "Each assigned room is listed with its time window. One outside the shift is flagged and kept separate from hours."
+          },
+          {
+            "id": "s6-f3",
+            "number": "03",
+            "title": "Time stated plainly",
+            "description": "Unassigned time is shown separately from break time, so the schedule is never misread."
+          },
+          {
+            "id": "s6-f4",
+            "number": "04",
+            "title": "Four places, nothing more",
+            "description": "Today, My shift, My log and Guides: the only screens a staff member needs during a shift."
+          }
+        ]
+      },
+      {
+        "id": "slide-7",
+        "slideNumber": 7,
+        "section": "focusrealm_core",
+        "headerTag": "07 / 12",
+        "eyebrow": "SUPERVISION",
+        "title": "The manager’s view: assignments, exceptions and evidence.",
+        "subtitle": "Room assignments and blocked work resolved in seconds from one intuitive desktop dashboard.",
+        "footerNote": "Mise Manager Control Center",
+        "layoutType": "manager_experience",
+        "cards": [
+          {
+            "id": "s7-dashboard",
+            "title": "Manager Supervision Dashboard",
+            "description": "Shift management control center with real-time room dispatch and attendance verification.",
+            "imageUrl": "/assets/p8_img1.png",
+            "imageCaption": "Real-time floor supervision dashboard"
+          },
+          {
+            "id": "s7-p1",
+            "title": "Choose the shift",
+            "description": "Morning, afternoon and night shifts, each with its staff target and room count."
+          },
+          {
+            "id": "s7-p2",
+            "title": "Assign and clear",
+            "description": "Room assignments and blocked work are resolved from one unified control screen."
+          },
+          {
+            "id": "s7-p3",
+            "title": "Unknown is not absent",
+            "description": "Attendance not yet confirmed is shown as unknown, never prematurely marked as absent or late."
+          }
+        ]
+      },
+      {
+        "id": "slide-8",
+        "slideNumber": 8,
+        "section": "focusrealm_core",
+        "headerTag": "08 / 12",
+        "eyebrow": "AUTHOR PORTAL",
+        "title": "Authored once by your team. Published to the properties you choose.",
+        "subtitle": "Turn static PDF checklists into interactive, time-bound floor workflows across your portfolio.",
+        "footerNote": "Mise Standards Authoring Engine",
+        "layoutType": "author_experience",
+        "cards": [
+          {
+            "id": "s8-screen",
+            "title": "SOP Authoring Studio",
+            "description": "Clean standards authoring interface with real-time field validation.",
+            "imageUrl": "/assets/p9_img1.jpeg",
+            "imageCaption": "Standards authoring and workflow editor"
+          },
+          {
+            "id": "s8-p1",
+            "number": "1",
+            "title": "Enter your standard",
+            "description": "Title, code, role, target time and search tags, as your team already defines them. Drafts remain in the editor until published."
+          },
+          {
+            "id": "s8-p2",
+            "number": "2",
+            "title": "Publish and track",
+            "description": "Each published version is linked to every task that uses it, so a later change does not alter work already recorded. Use and verified completions are visible to the author."
+          }
+        ]
+      },
+      {
+        "id": "slide-9",
+        "slideNumber": 9,
+        "section": "focusrealm_core",
+        "headerTag": "09 / 12",
+        "eyebrow": "WHAT CHANGES",
+        "title": "Six outcomes, measured against your own baseline.",
+        "subtitle": "Measured against your own operational baseline, not an abstract industry average.",
+        "footerNote": "Demonstrated operational improvements in live shifts",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s9-c1",
+            "number": "01",
+            "title": "Your standard runs after you leave",
+            "description": "The routine your leadership team sets at a property carries on in the same form once they move to the next property."
+          },
+          {
+            "id": "s9-c2",
+            "number": "02",
+            "title": "Evidence you can show an owner",
+            "description": "An incontrovertible record of what was completed on the floor, ready whenever you report on property performance."
+          },
+          {
+            "id": "s9-c3",
+            "number": "03",
+            "title": "One standard, many property types",
+            "description": "Resorts, villas, and destination spas each run their own adapted version of a core standard written once by your team."
+          },
+          {
+            "id": "s9-c4",
+            "number": "04",
+            "title": "A new mandate starts on your standard",
+            "description": "When taking on a new management mandate, your standard is live on the floor from the very first shift."
+          },
+          {
+            "id": "s9-c5",
+            "number": "05",
+            "title": "Supervision without more supervisors",
+            "description": "Completion is verified from a screen rather than solely on foot, supporting the lean management teams you plan for."
+          },
+          {
+            "id": "s9-c6",
+            "number": "06",
+            "title": "Earlier correction, fewer recoveries",
+            "description": "Missed steps surface in real time during the shift while they can still be resolved, rather than later in an unhappy guest review."
+          }
+        ]
+      },
+      {
+        "id": "slide-10",
+        "slideNumber": 10,
+        "section": "personalized",
+        "headerTag": "10 / 12",
+        "eyebrow": "UNDERSTANDING YOUR BUSINESS",
+        "title": "A portfolio you run, property by property.",
+        "subtitle": "Operational footprint, property assets, and service philosophy of The Oberoi Group.",
+        "footerNote": "Researched from official property sources and verified operational records",
+        "layoutType": "company_overview",
+        "customBrandTheme": {
+          "primary": "#854d0e",
+          "secondary": "#1c1917",
+          "accent": "#ca8a04",
+          "background": "#fafaf9",
+          "surface": "#ffffff",
+          "text": "#1c1917",
+          "textMuted": "#78716c",
+          "border": "#e7e5e4"
+        },
+        "cards": [
+          {
+            "id": "s10-c1",
+            "number": "01",
+            "title": "Business Model & Mandate",
+            "description": "Ultra-Luxury Hotel & Resort Operator. Delivering tailored guest hospitality with high standards of operational discipline."
+          },
+          {
+            "id": "s10-c2",
+            "number": "02",
+            "title": "Properties & Locations",
+            "description": "The Oberoi Udaivilas (Palace Resort, Udaipur, India) • The Oberoi Amarvilas (Luxury Monumental Resort, Agra, India) • The Oberoi Rajvilas (Heritage Resort, Jaipur, India) • The Oberoi Wildflower Hall (Himalayan Luxury Resort, Shimla, India)",
+            "sourceUrl": "https://www.oberoihotels.com/about-us"
+          },
+          {
+            "id": "s10-c3",
+            "number": "03",
+            "title": "Standards of Your Own",
+            "description": "Proven procedures adapted to each client and property environment, rather than rigid, one-size-fits-all checklists."
+          },
+          {
+            "id": "s10-c4",
+            "number": "04",
+            "title": "What This Means for Service",
+            "description": "With embedded teams across varied asset formats, maintaining identical room-readiness standards requires seamless visibility between leadership and the floor."
+          }
+        ]
+      },
+      {
+        "id": "slide-11",
+        "slideNumber": 11,
+        "section": "personalized",
+        "headerTag": "11 / 12",
+        "eyebrow": "WORKING TOGETHER",
+        "title": "Where we see a direct fit for The Oberoi Group.",
+        "subtitle": "The execution layer behind your standards — without adding executive travel or extra headcount.",
+        "footerNote": "FocusRealm Tailored Solution Fit",
+        "layoutType": "fit_columns",
+        "customBrandTheme": {
+          "primary": "#854d0e",
+          "secondary": "#1c1917",
+          "accent": "#ca8a04",
+          "background": "#fafaf9",
+          "surface": "#ffffff",
+          "text": "#1c1917",
+          "textMuted": "#78716c",
+          "border": "#e7e5e4"
+        },
+        "cards": [
+          {
+            "id": "s11-c1",
+            "number": "01",
+            "title": "The execution layer behind your standards",
+            "description": "Your procedures running on the floor across The Oberoi Udaivilas and The Oberoi Amarvilas, without requiring senior management to walk every corridor."
+          },
+          {
+            "id": "s11-c2",
+            "number": "02",
+            "title": "Evidence for your owner reporting",
+            "description": "An indisputable digital record of what was completed on every shift, ready whenever you report to hotel asset owners."
+          },
+          {
+            "id": "s11-c3",
+            "number": "03",
+            "title": "A product shaped alongside operators",
+            "description": "We partner closely with hospitality teams to ensure the software serves the floor staff rather than becoming another cumbersome administrative chore."
+          }
+        ]
+      },
+      {
+        "id": "slide-12",
+        "slideNumber": 12,
+        "section": "personalized",
+        "headerTag": "12 / 12",
+        "eyebrow": "NEXT STEP",
+        "title": "We would be glad to begin with one property.",
+        "subtitle": "With your permission, we would like to arrange a demonstration at a property of your choosing, alongside the manager and one member of the team.",
+        "footerNote": "Thank you for your time. We welcome the chance to work alongside you.",
+        "layoutType": "pilot_steps",
+        "customBrandTheme": {
+          "primary": "#854d0e",
+          "secondary": "#1c1917",
+          "accent": "#ca8a04",
+          "background": "#fafaf9",
+          "surface": "#ffffff",
+          "text": "#1c1917",
+          "textMuted": "#78716c",
+          "border": "#e7e5e4"
+        },
+        "cards": [
+          {
+            "id": "s12-c1",
+            "number": "1",
+            "title": "A property and a week that suit you",
+            "description": "Chosen entirely by your team — whether a high-occupancy resort or boutique property."
+          },
+          {
+            "id": "s12-c2",
+            "number": "2",
+            "title": "One manager and one team member",
+            "description": "A focused, non-disruptive footprint to evaluate usability directly on the floor."
+          },
+          {
+            "id": "s12-c3",
+            "number": "3",
+            "title": "We attend in person and run a single shift together",
+            "description": "Experience room assignment, task confirmation, and supervisor review in live operation."
+          }
+        ]
+      }
+    ],
+    "theme": {
+      "focusRealmPalette": {
+        "primary": "#102f35",
+        "secondary": "#173d45",
+        "accent": "#3db89e",
+        "background": "#f5f2e9",
+        "surface": "#ffffff",
+        "text": "#102f35",
+        "textMuted": "#577176",
+        "border": "#d8d2c4"
+      },
+      "targetBrandPalette": {
+        "primary": "#854d0e",
+        "secondary": "#1c1917",
+        "accent": "#ca8a04",
+        "background": "#fafaf9",
+        "surface": "#ffffff",
+        "text": "#1c1917",
+        "textMuted": "#78716c",
+        "border": "#e7e5e4"
+      }
+    }
+  },
+  {
+    "id": "deck-1792764569019",
+    "companyName": "Mathur Hospitality",
+    "websiteUrl": "https://mathurhospitality.com",
+    "createdAt": "2026-10-23T14:09:29.019Z",
+    "updatedAt": "2026-10-24T06:26:50.351Z",
+    "companyDossier": {
+      "name": "Mathur Hospitality",
+      "websiteUrl": "https://mathurhospitality.com",
+      "tagline": "Luxury Boutique & Resort Operations Consultancy",
+      "businessModel": "Consultancy and Property Operations Management",
+      "properties": [
+        {
+          "name": "ARK Lake Resort",
+          "location": "Maharashtra, India",
+          "type": "Luxury Lake Resort"
+        },
+        {
+          "name": "Ayati Resort & Spa",
+          "location": "Maharashtra, India",
+          "type": "Wellness & Spa Resort"
+        },
+        {
+          "name": "The Pearl Mansions",
+          "location": "Western India",
+          "type": "Private Luxury Mansions & Villas"
+        }
+      ],
+      "operationalContext": [
+        "Multi-property portfolio spanning luxury lake resorts, wellness spas, and private villas",
+        "Embedded on-site operational teams running day-to-day hospitality",
+        "High owner accountability: reporting operational execution directly to property asset owners",
+        "Customized SOPs tailored to each unique property rather than one-size-fits-all rigid standards"
+      ],
+      "brandPalette": {
+        "primary": "#1e3a8a",
+        "secondary": "#0f172a",
+        "accent": "#d97706",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      },
+      "sources": [
+        {
+          "title": "Mathur Hospitality Portfolio & Advisory Overview",
+          "url": "https://mathurhospitality.com/portfolio",
+          "domain": "mathurhospitality.com",
+          "snippet": "Comprehensive hotel management from feasibility through day-to-day operations across resorts, villas, and destination spas.",
+          "accessedAt": "2026-10-23T14:09:29.006Z",
+          "category": "official_site"
+        },
+        {
+          "title": "Mise–Mathur Hospitality Partnership Assessment",
+          "url": "https://mise.care/reference/mathur-hospitality-case",
+          "domain": "mise.care",
+          "snippet": "Operational review covering ARK Lake Resort, Ayati Resort & Spa, and Pearl Mansions standards execution.",
+          "accessedAt": "2026-10-23T14:09:29.007Z",
+          "category": "industry_report"
+        }
+      ],
+      "factsAndHypotheses": [
+        {
+          "id": "f1",
+          "statement": "Mathur Hospitality manages diverse luxury assets including ARK Lake Resort, Ayati Resort & Spa, and Pearl Mansions.",
+          "type": "verified_fact",
+          "sourceUrl": "https://mathurhospitality.com/portfolio",
+          "sourceTitle": "Mathur Hospitality Official Portfolio",
+          "relevance": "Defines the operational footprint and variety of asset classes requiring standardized execution."
+        },
+        {
+          "id": "f2",
+          "statement": "Provides end-to-end hospitality services from feasibility and kitchen planning through to running daily property shifts.",
+          "type": "verified_fact",
+          "sourceUrl": "https://mathurhospitality.com",
+          "sourceTitle": "Corporate Services Overview",
+          "relevance": "Demonstrates deep operator expertise and commitment to brand standards."
+        },
+        {
+          "id": "h1",
+          "statement": "Expansive properties (lake resorts, multi-acre spas, private villas) mean supervisors cannot be on every floor or in every room during every shift.",
+          "type": "inferred_hypothesis",
+          "relevance": "Creates a physical supervision bottleneck where daily SOP execution relies heavily on memory unless digitized."
+        },
+        {
+          "id": "h2",
+          "statement": "Property owners require concrete, verifiable evidence of service execution and asset upkeep rather than subjective verbal updates.",
+          "type": "inferred_hypothesis",
+          "relevance": "Presents an opportunity for automated shift logs, photo proof, and audit-ready reporting to delight owners."
+        }
+      ]
+    },
+    "slides": [
+      {
+        "id": "slide-1",
+        "slideNumber": 1,
+        "section": "focusrealm_core",
+        "headerTag": "01 / 12",
+        "eyebrow": "HOTEL SERVICE EXECUTION PLATFORM",
+        "title": "Ownership you can see. Accountability you can prove.",
+        "subtitle": "An executive conversation on service execution, prepared for Mathur Hospitality.",
+        "footerNote": "Mise is care.",
+        "layoutType": "intro_title",
+        "cards": [
+          {
+            "id": "s1-c1",
+            "title": "Execution on the Floor",
+            "description": "Carrying proven SOPs into live shifts with room-by-room dispatch and timed windows.",
+            "badge": "Core Platform"
+          },
+          {
+            "id": "s1-c2",
+            "title": "Proof for Leadership",
+            "description": "Tamper-proof photo evidence and instant exception alerts for lean supervisory teams.",
+            "badge": "Accountability"
+          },
+          {
+            "id": "s1-c3",
+            "title": "Audit & Owner Records",
+            "description": "Immutable records for brand audits, owner reviews, and consistent 5-star delivery.",
+            "badge": "Assurance"
+          }
+        ]
+      },
+      {
+        "id": "slide-2",
+        "slideNumber": 2,
+        "section": "focusrealm_core",
+        "headerTag": "02 / 12",
+        "eyebrow": "OUR TEAM",
+        "title": "The people building Mise.",
+        "subtitle": "Built by hospitality operators and engineers with direct floor experience.",
+        "footerNote": "FocusRealm Executive Team",
+        "layoutType": "team_portraits",
+        "cards": [
+          {
+            "id": "s2-c1",
+            "title": "Sehej Sharma",
+            "description": "Chief Executive Officer. Driving platform strategy, luxury hospitality partnerships, and enterprise vision.",
+            "imageUrl": "/assets/p2_img1.png",
+            "badge": "Chief Executive Officer"
+          },
+          {
+            "id": "s2-c2",
+            "title": "Ali Electricwala",
+            "description": "Chief Operating Officer. Leading floor operations, property onboarding, and staff adoption.",
+            "imageUrl": "/assets/p2_img2.png",
+            "badge": "Chief Operating Officer"
+          },
+          {
+            "id": "s2-c3",
+            "title": "Aditya Mishra",
+            "description": "Chief Technology Officer. Architecting real-time shift systems, audit trails, and offline resilience.",
+            "imageUrl": "/assets/p2_img3.png",
+            "badge": "Chief Technology Officer"
+          }
+        ]
+      },
+      {
+        "id": "slide-3",
+        "slideNumber": 3,
+        "section": "focusrealm_core",
+        "headerTag": "03 / 12",
+        "eyebrow": "ADVISORY BOARD",
+        "title": "The people guiding us.",
+        "subtitle": "Decades of luxury training, standards development, and operational excellence.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "advisors_list",
+        "cards": [
+          {
+            "id": "s3-c1",
+            "title": "Renu Mehra",
+            "description": "Luxury & Celebrity Image Consultant & Corporate Trainer. Specializes in luxury etiquette, grooming, and 5-star brand identity.",
+            "imageUrl": "/assets/p3_img1.png",
+            "badge": "Industry Advisor"
+          },
+          {
+            "id": "s3-c2",
+            "title": "Parul Sharma",
+            "description": "Master Hospitality Trainer & Quality Auditor. Trained hotel staff for over 20 years in floor SOP discipline across premier chains.",
+            "imageUrl": "/assets/p3_img2.png",
+            "badge": "Industry Advisor"
+          }
+        ]
+      },
+      {
+        "id": "slide-4",
+        "slideNumber": 4,
+        "section": "focusrealm_core",
+        "headerTag": "04 / 12",
+        "eyebrow": "INDUSTRY CONTEXT",
+        "title": "Six challenges we hear across the industry.",
+        "subtitle": "Why standard operating procedures fail between the binder and the daily shift.",
+        "footerNote": "FocusRealm Service Execution Platform",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s4-c1",
+            "number": "01",
+            "title": "Supervisor Bottleneck",
+            "description": "Supervision happens in person. However capable a manager is, nobody can be on every floor or inspect every room at once."
+          },
+          {
+            "id": "s4-c2",
+            "number": "02",
+            "title": "Ghost SOP",
+            "description": "A carefully written procedure sits in a folder or binder, while daily practice gradually and silently moves away from it."
+          },
+          {
+            "id": "s4-c3",
+            "number": "03",
+            "title": "Invisible Performance Gap",
+            "description": "From head office, a strong shift and a difficult one look alike. Good work goes unrecognised, and small slips surface late."
+          },
+          {
+            "id": "s4-c4",
+            "number": "04",
+            "title": "Attrition Bleed",
+            "description": "When staff are not set up to succeed with clear expectations, they move on. Hard-won experience leaves with them, and recruitment restarts."
+          },
+          {
+            "id": "s4-c5",
+            "number": "05",
+            "title": "Star Rating Ceiling",
+            "description": "Consistency is what lifts ratings and reviews. Without it, a property can plateau despite the individual effort of its teams."
+          },
+          {
+            "id": "s4-c6",
+            "number": "06",
+            "title": "Audit Ambush",
+            "description": "Owners and brand reviews ask for evidence. Without a record kept as the work happens, it has to be painfully assembled afterwards."
+          }
+        ]
+      },
+      {
+        "id": "slide-5",
+        "slideNumber": 5,
+        "section": "focusrealm_core",
+        "headerTag": "05 / 12",
+        "eyebrow": "HOW MISE WORKS",
+        "title": "Your standards, implemented. Executed on every floor.",
+        "subtitle": "Mise does not rewrite your standards. It implements the standards your team has already proven.",
+        "footerNote": "Mise Architecture Overview",
+        "layoutType": "workflow_overview",
+        "cards": [
+          {
+            "id": "s5-step1",
+            "number": "1",
+            "title": "Your standard",
+            "description": "The proven procedures your team already trusts, carried directly into Mise without alteration.",
+            "badge": "Step 1"
+          },
+          {
+            "id": "s5-step2",
+            "number": "2",
+            "title": "Implemented as timed tasks",
+            "description": "Each standard becomes a task for the right role, in the right room, with a defined execution window.",
+            "badge": "Step 2"
+          },
+          {
+            "id": "s5-step3",
+            "number": "3",
+            "title": "Executed on staff phone",
+            "description": "Staff complete each step on their phone, with photo evidence where your standard requires it.",
+            "badge": "Step 3"
+          },
+          {
+            "id": "s5-step4",
+            "number": "4",
+            "title": "Evidence on record",
+            "description": "A tamper-proof service record that supports manager review, owner reporting and audit.",
+            "badge": "Step 4"
+          }
+        ]
+      },
+      {
+        "id": "slide-6",
+        "slideNumber": 6,
+        "section": "focusrealm_core",
+        "headerTag": "06 / 12",
+        "eyebrow": "ON THE FLOOR",
+        "title": "What the staff member sees: her rooms, her shift, one screen.",
+        "subtitle": "Clear room assignment, sequential timed windows, and instant SOP checklists on staff phones.",
+        "footerNote": "Mise Mobile Floor Application",
+        "layoutType": "staff_experience",
+        "cards": [
+          {
+            "id": "s6-screen",
+            "title": "Staff Mobile Screen",
+            "description": "Mobile shift execution interface showing room assignments and timed execution windows.",
+            "imageUrl": "/assets/p7_img1.png",
+            "imageCaption": "Live shift view for room attendants"
+          },
+          {
+            "id": "s6-f1",
+            "number": "01",
+            "title": "Shift at a glance",
+            "description": "Scheduled hours, check-in status and unassigned time for the shift are shown together."
+          },
+          {
+            "id": "s6-f2",
+            "number": "02",
+            "title": "Rooms in sequence",
+            "description": "Each assigned room is listed with its time window. One outside the shift is flagged and kept separate from hours."
+          },
+          {
+            "id": "s6-f3",
+            "number": "03",
+            "title": "Time stated plainly",
+            "description": "Unassigned time is shown separately from break time, so the schedule is never misread."
+          },
+          {
+            "id": "s6-f4",
+            "number": "04",
+            "title": "Four places, nothing more",
+            "description": "Today, My shift, My log and Guides: the only screens a staff member needs during a shift."
+          }
+        ]
+      },
+      {
+        "id": "slide-7",
+        "slideNumber": 7,
+        "section": "focusrealm_core",
+        "headerTag": "07 / 12",
+        "eyebrow": "SUPERVISION",
+        "title": "The manager’s view: assignments, exceptions and evidence.",
+        "subtitle": "Room assignments and blocked work resolved in seconds from one intuitive desktop dashboard.",
+        "footerNote": "Mise Manager Control Center",
+        "layoutType": "manager_experience",
+        "cards": [
+          {
+            "id": "s7-dashboard",
+            "title": "Manager Supervision Dashboard",
+            "description": "Shift management control center with real-time room dispatch and attendance verification.",
+            "imageUrl": "/assets/p8_img1.png",
+            "imageCaption": "Real-time floor supervision dashboard"
+          },
+          {
+            "id": "s7-p1",
+            "title": "Choose the shift",
+            "description": "Morning, afternoon and night shifts, each with its staff target and room count."
+          },
+          {
+            "id": "s7-p2",
+            "title": "Assign and clear",
+            "description": "Room assignments and blocked work are resolved from one unified control screen."
+          },
+          {
+            "id": "s7-p3",
+            "title": "Unknown is not absent",
+            "description": "Attendance not yet confirmed is shown as unknown, never prematurely marked as absent or late."
+          }
+        ]
+      },
+      {
+        "id": "slide-8",
+        "slideNumber": 8,
+        "section": "focusrealm_core",
+        "headerTag": "08 / 12",
+        "eyebrow": "AUTHOR PORTAL",
+        "title": "Authored once by your team. Published to the properties you choose.",
+        "subtitle": "Turn static PDF checklists into interactive, time-bound floor workflows across your portfolio.",
+        "footerNote": "Mise Standards Authoring Engine",
+        "layoutType": "author_experience",
+        "cards": [
+          {
+            "id": "s8-screen",
+            "title": "SOP Authoring Studio",
+            "description": "Clean standards authoring interface with real-time field validation.",
+            "imageUrl": "/assets/p9_img1.jpeg",
+            "imageCaption": "Standards authoring and workflow editor"
+          },
+          {
+            "id": "s8-p1",
+            "number": "1",
+            "title": "Enter your standard",
+            "description": "Title, code, role, target time and search tags, as your team already defines them. Drafts remain in the editor until published."
+          },
+          {
+            "id": "s8-p2",
+            "number": "2",
+            "title": "Publish and track",
+            "description": "Each published version is linked to every task that uses it, so a later change does not alter work already recorded. Use and verified completions are visible to the author."
+          }
+        ]
+      },
+      {
+        "id": "slide-9",
+        "slideNumber": 9,
+        "section": "focusrealm_core",
+        "headerTag": "09 / 12",
+        "eyebrow": "WHAT CHANGES",
+        "title": "Six outcomes, measured against your own baseline.",
+        "subtitle": "Measured against your own operational baseline, not an abstract industry average.",
+        "footerNote": "Demonstrated operational improvements in live shifts",
+        "layoutType": "grid_six",
+        "cards": [
+          {
+            "id": "s9-c1",
+            "number": "01",
+            "title": "Your standard runs after you leave",
+            "description": "The routine your leadership team sets at a property carries on in the same form once they move to the next property."
+          },
+          {
+            "id": "s9-c2",
+            "number": "02",
+            "title": "Evidence you can show an owner",
+            "description": "An incontrovertible record of what was completed on the floor, ready whenever you report on property performance."
+          },
+          {
+            "id": "s9-c3",
+            "number": "03",
+            "title": "One standard, many property types",
+            "description": "Resorts, villas, and destination spas each run their own adapted version of a core standard written once by your team."
+          },
+          {
+            "id": "s9-c4",
+            "number": "04",
+            "title": "A new mandate starts on your standard",
+            "description": "When taking on a new management mandate, your standard is live on the floor from the very first shift."
+          },
+          {
+            "id": "s9-c5",
+            "number": "05",
+            "title": "Supervision without more supervisors",
+            "description": "Completion is verified from a screen rather than solely on foot, supporting the lean management teams you plan for."
+          },
+          {
+            "id": "s9-c6",
+            "number": "06",
+            "title": "Earlier correction, fewer recoveries",
+            "description": "Missed steps surface in real time during the shift while they can still be resolved, rather than later in an unhappy guest review."
+          }
+        ]
+      },
+      {
+        "id": "slide-10",
+        "slideNumber": 10,
+        "section": "personalized",
+        "headerTag": "10 / 12",
+        "eyebrow": "UNDERSTANDING YOUR BUSINESS",
+        "title": "A portfolio you run, property by property.",
+        "subtitle": "Operational footprint, property assets, and service philosophy of Mathur Hospitality.",
+        "footerNote": "Researched from official property sources and verified operational records",
+        "layoutType": "company_overview",
+        "customBrandTheme": {
+          "primary": "#1e3a8a",
+          "secondary": "#0f172a",
+          "accent": "#d97706",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s10-c1",
+            "number": "01",
+            "title": "Business Model & Mandate",
+            "description": "Consultancy and Property Operations Management. Delivering tailored guest hospitality with high standards of operational discipline."
+          },
+          {
+            "id": "s10-c2",
+            "number": "02",
+            "title": "Properties & Locations",
+            "description": "ARK Lake Resort (Luxury Lake Resort, Maharashtra, India) • Ayati Resort & Spa (Wellness & Spa Resort, Maharashtra, India) • The Pearl Mansions (Private Luxury Mansions & Villas, Western India)",
+            "sourceUrl": "https://mathurhospitality.com/portfolio"
+          },
+          {
+            "id": "s10-c3",
+            "number": "03",
+            "title": "Standards of Your Own",
+            "description": "Proven procedures adapted to each client and property environment, rather than rigid, one-size-fits-all checklists."
+          },
+          {
+            "id": "s10-c4",
+            "number": "04",
+            "title": "What This Means for Service",
+            "description": "With embedded teams across varied asset formats, maintaining identical room-readiness standards requires seamless visibility between leadership and the floor."
+          }
+        ]
+      },
+      {
+        "id": "slide-11",
+        "slideNumber": 11,
+        "section": "personalized",
+        "headerTag": "11 / 12",
+        "eyebrow": "WORKING TOGETHER",
+        "title": "Where we see a direct fit for Mathur Hospitality.",
+        "subtitle": "The execution layer behind your standards — without adding executive travel or extra headcount.",
+        "footerNote": "FocusRealm Tailored Solution Fit",
+        "layoutType": "fit_columns",
+        "customBrandTheme": {
+          "primary": "#1e3a8a",
+          "secondary": "#0f172a",
+          "accent": "#d97706",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s11-c1",
+            "number": "01",
+            "title": "The execution layer behind your standards",
+            "description": "Your procedures running on the floor across ARK Lake Resort and Ayati Resort & Spa, without requiring senior management to walk every corridor."
+          },
+          {
+            "id": "s11-c2",
+            "number": "02",
+            "title": "Evidence for your owner reporting",
+            "description": "An indisputable digital record of what was completed on every shift, ready whenever you report to hotel asset owners."
+          },
+          {
+            "id": "s11-c3",
+            "number": "03",
+            "title": "A product shaped alongside operators",
+            "description": "We partner closely with hospitality teams to ensure the software serves the floor staff rather than becoming another cumbersome administrative chore."
+          }
+        ]
+      },
+      {
+        "id": "slide-12",
+        "slideNumber": 12,
+        "section": "personalized",
+        "headerTag": "12 / 12",
+        "eyebrow": "NEXT STEP",
+        "title": "We would be glad to begin with one property.",
+        "subtitle": "With your permission, we would like to arrange a demonstration at a property of your choosing, alongside the manager and one member of the team.",
+        "footerNote": "Thank you for your time. We welcome the chance to work alongside you.",
+        "layoutType": "pilot_steps",
+        "customBrandTheme": {
+          "primary": "#1e3a8a",
+          "secondary": "#0f172a",
+          "accent": "#d97706",
+          "background": "#f8fafc",
+          "surface": "#ffffff",
+          "text": "#0f172a",
+          "textMuted": "#64748b",
+          "border": "#e2e8f0"
+        },
+        "cards": [
+          {
+            "id": "s12-c1",
+            "number": "1",
+            "title": "A property and a week that suit you",
+            "description": "Chosen entirely by your team — whether a high-occupancy resort or boutique property."
+          },
+          {
+            "id": "s12-c2",
+            "number": "2",
+            "title": "One manager and one team member",
+            "description": "A focused, non-disruptive footprint to evaluate usability directly on the floor."
+          },
+          {
+            "id": "s12-c3",
+            "number": "3",
+            "title": "We attend in person and run a single shift together",
+            "description": "Experience room assignment, task confirmation, and supervisor review in live operation."
+          }
+        ]
+      }
+    ],
+    "theme": {
+      "focusRealmPalette": {
+        "primary": "#102f35",
+        "secondary": "#173d45",
+        "accent": "#3db89e",
+        "background": "#f5f2e9",
+        "surface": "#ffffff",
+        "text": "#102f35",
+        "textMuted": "#577176",
+        "border": "#d8d2c4"
+      },
+      "targetBrandPalette": {
+        "primary": "#1e3a8a",
+        "secondary": "#0f172a",
+        "accent": "#d97706",
+        "background": "#f8fafc",
+        "surface": "#ffffff",
+        "text": "#0f172a",
+        "textMuted": "#64748b",
+        "border": "#e2e8f0"
+      }
+    }
+  }
+]
