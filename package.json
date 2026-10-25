@@ -22,8 +22,9 @@
     "mise-hotel"
   ],
   "author": "FocusRealm Team",
-  "license": "ISC",
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
   }
 }
