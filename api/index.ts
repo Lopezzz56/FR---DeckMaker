@@ -1,4 +1,3 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
@@ -22,6 +21,6 @@ app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', service: 'FocusRealm Presentation Studio Backend (Serverless)' });
 });
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  return app(req as any, res as any);
+export default function handler(req: any, res: any) {
+  return app(req, res);
 }
