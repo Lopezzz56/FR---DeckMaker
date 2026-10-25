@@ -9,8 +9,22 @@ import { generatePdf } from '../services/pdfService.js';
 import { deckStore } from '../services/storeService.js';
 import { CompanyDossier, PresentationDeck } from '../types/presentation.js';
 
+import os from 'os';
+
 const router = Router();
-const upload = multer({ dest: path.resolve(process.cwd(), 'uploads') });
+const uploadDir = (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME)
+  ? path.join(os.tmpdir(), 'focusrealm_uploads')
+  : path.resolve(process.cwd(), 'uploads');
+
+try {
+  if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir, { recursive: true });
+  }
+} catch (e) {
+  console.warn('[upload] Notice: Could not create upload directory:', e);
+}
+
+const upload = multer({ dest: uploadDir });
 
 // Research Company
 router.post('/research', async (req: Request, res: Response) => {
@@ -30,7 +44,10 @@ router.post('/research', async (req: Request, res: Response) => {
     return res.json(dossier);
   } catch (err: any) {
     console.error('Error during research:', err);
-    return res.status(500).json({ error: err.message || 'Research failed' });
+    return res.status(500).json({ 
+      error: err?.message || 'Research failed',
+      details: String(err)
+    });
   }
 });
 
@@ -55,12 +72,19 @@ router.post('/generate', async (req: Request, res: Response) => {
     }
 
     const deck = generate8SlideDeck(dossier);
-    deckStore.save(deck);
+    try {
+      deckStore.save(deck);
+    } catch (storeErr) {
+      console.warn('[deckStore] Non-fatal save failure:', storeErr);
+    }
 
     return res.json(deck);
   } catch (err: any) {
     console.error('Error generating presentation:', err);
-    return res.status(500).json({ error: err.message || 'Generation failed' });
+    return res.status(500).json({ 
+      error: err?.message || 'Generation failed',
+      details: String(err)
+    });
   }
 });
 

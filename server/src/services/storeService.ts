@@ -1,33 +1,51 @@
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import { PresentationDeck } from '../types/presentation.js';
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+// Determine safe storage directory: prefer /tmp in serverless environments, otherwise local data directory
+const isServerless = !!process.env.VERCEL || !!process.env.AWS_LAMBDA_FUNCTION_NAME;
+const DATA_DIR = isServerless 
+  ? path.join(os.tmpdir(), 'focusrealm_data') 
+  : path.resolve(process.cwd(), 'data');
 const STORE_FILE = path.join(DATA_DIR, 'presentations.json');
 
-// Ensure data directory exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+// In-memory cache ensures zero crashes even if the filesystem is completely read-only
+let memoryDecks: PresentationDeck[] = [];
+
+// Safely ensure directory exists
+try {
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+} catch (err) {
+  console.warn('[storeService] Notice: File system write unavailable or restricted, utilizing in-memory storage:', err);
 }
 
 function readAll(): PresentationDeck[] {
   try {
-    if (!fs.existsSync(STORE_FILE)) {
-      return [];
+    if (fs.existsSync(STORE_FILE)) {
+      const raw = fs.readFileSync(STORE_FILE, 'utf-8');
+      const loaded: PresentationDeck[] = JSON.parse(raw);
+      if (Array.isArray(loaded) && loaded.length > 0) {
+        memoryDecks = loaded;
+      }
     }
-    const raw = fs.readFileSync(STORE_FILE, 'utf-8');
-    return JSON.parse(raw);
   } catch (err) {
-    console.error('Error reading presentations store:', err);
-    return [];
+    console.warn('[storeService] Notice: Could not read store file, falling back to in-memory store:', err);
   }
+  return memoryDecks;
 }
 
 function writeAll(decks: PresentationDeck[]): void {
+  memoryDecks = decks;
   try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
     fs.writeFileSync(STORE_FILE, JSON.stringify(decks, null, 2), 'utf-8');
   } catch (err) {
-    console.error('Error writing presentations store:', err);
+    console.warn('[storeService] Notice: Could not persist store file to disk (continuing in-memory):', err);
   }
 }
 
@@ -65,3 +83,4 @@ export const deckStore = {
     return false;
   }
 };
+
