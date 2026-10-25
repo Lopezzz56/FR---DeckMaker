@@ -373,25 +373,31 @@ function renderPptxCardGrid(
 
       // Number / Badge
       if (card.number) {
+        const numCircleSize = 0.38;
+        const numCircleX = cX + 0.2;
+        const numCircleY = cY + 0.16;
         slide.addShape('roundRect', {
-          x: cX + 0.2,
-          y: cY + 0.18,
-          w: 0.32,
-          h: 0.32,
-          rectRadius: 0.16,
+          x: numCircleX,
+          y: numCircleY,
+          w: numCircleSize,
+          h: numCircleSize,
+          rectRadius: numCircleSize / 2,
           fill: { color: 'F1F5F9' },
           line: { color: cardBorder, width: 1 }
         });
         slide.addText(String(card.number), {
-          x: cX + 0.2,
-          y: cY + 0.19,
-          w: 0.32,
-          h: 0.32,
-          fontSize: 9,
+          x: numCircleX - 0.06,
+          y: numCircleY + 0.01,
+          w: numCircleSize + 0.12,
+          h: numCircleSize,
+          fontSize: 9.5,
           fontFace: 'Arial',
           color: primary,
           bold: true,
-          align: 'center'
+          align: 'center',
+          valign: 'middle',
+          margin: 0,
+          wrap: false
         });
       } else if (card.badge) {
         slide.addText(card.badge.toUpperCase(), {
@@ -460,25 +466,31 @@ function renderPptxCardGrid(
     });
 
     if (card.number) {
+      const numCircleSize = 0.44;
+      const numCircleX = cX + 0.25;
+      const numCircleY = startY + 0.22;
       slide.addShape('roundRect', {
-        x: cX + 0.25,
-        y: startY + 0.25,
-        w: 0.4,
-        h: 0.4,
-        rectRadius: 0.2,
+        x: numCircleX,
+        y: numCircleY,
+        w: numCircleSize,
+        h: numCircleSize,
+        rectRadius: numCircleSize / 2,
         fill: { color: 'F1F5F9' },
         line: { color: cardBorder, width: 1 }
       });
       slide.addText(String(card.number), {
-        x: cX + 0.25,
-        y: startY + 0.27,
-        w: 0.4,
-        h: 0.4,
+        x: numCircleX - 0.08,
+        y: numCircleY + 0.02,
+        w: numCircleSize + 0.16,
+        h: numCircleSize,
         fontSize: 11,
         fontFace: 'Arial',
         color: primary,
         bold: true,
-        align: 'center'
+        align: 'center',
+        valign: 'middle',
+        margin: 0,
+        wrap: false
       });
     } else if (card.badge) {
       slide.addText(card.badge.toUpperCase(), {
@@ -868,15 +880,18 @@ function renderPptxStepperWorkflow(
       line: { color: cardFill, width: 2 }
     });
     slide.addText(String(step.stepNumber), {
-      x: sX + (stepW - 0.44) / 2,
+      x: sX + (stepW - 0.6) / 2,
       y: startY + 0.2,
-      w: 0.44,
+      w: 0.6,
       h: 0.44,
       fontSize: 10.5,
       fontFace: 'Arial',
       color: 'FFFFFF',
       bold: true,
-      align: 'center'
+      align: 'center',
+      valign: 'middle',
+      margin: 0,
+      wrap: false
     });
 
     // Step Card

@@ -143,7 +143,7 @@ export function toCanonicalSlide(slide: SlideData, deck: PresentationDeck): Cano
       layoutPayload = {
         type: 'hero_intro',
         payload: {
-          tagline: slide.subtitle,
+          tagline: 'Built alongside luxury hoteliers to bridge the gap between executive standards and daily floor execution — ensuring accountability, tamper-proof proof, and pristine guest experiences across every shift.',
           pillars: slide.cards.map(c => ({
             title: c.title,
             description: c.description,
