@@ -25,7 +25,7 @@ export const CardGridLayout: React.FC<Props> = ({ payload, tokens, onOpenSources
   if (columns === 6) gridColsClass = 'grid-cols-3';
 
   return (
-    <div className="w-full h-full flex items-center justify-center py-2">
+    <div className="w-full h-full flex flex-col justify-center items-center py-2 gap-8">
       <div className={`grid ${gridColsClass} gap-7 w-full items-stretch`}>
         {cards.map((card) => {
           const isFact = card.badge?.includes('FACT');
@@ -34,7 +34,7 @@ export const CardGridLayout: React.FC<Props> = ({ payload, tokens, onOpenSources
             <div 
               key={card.id}
               className="rounded-2xl shadow-sm border flex flex-col justify-between p-8 relative overflow-hidden transition-all bg-white"
-              style={{ backgroundColor: palette.surface, borderColor: palette.border, minHeight: '360px', maxHeight: '520px' }}
+              style={{ backgroundColor: palette.surface, borderColor: palette.border, minHeight: '340px', maxHeight: '460px' }}
             >
               {/* Top Accent Stripe */}
               <div 
@@ -115,7 +115,7 @@ export const CardGridLayout: React.FC<Props> = ({ payload, tokens, onOpenSources
       {/* Optional Reassurance Callout Banner (Slide 11 style) */}
       {bannerCallout && (
         <div 
-          className="rounded-2xl border flex items-center justify-center text-center p-5 mt-6 shadow-xs flex-shrink-0"
+          className="w-full rounded-2xl border flex items-center justify-center text-center p-5 shadow-xs flex-shrink-0"
           style={{ backgroundColor: palette.primary, borderColor: palette.primary }}
         >
           <span className="text-base font-semibold text-white tracking-wide">

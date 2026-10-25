@@ -1,5 +1,6 @@
 import React from 'react';
 import { CanonicalSlide } from '../../types/canonicalSlide';
+import { HeroIntroLayout } from './HeroIntroLayout';
 import { HeroMediaPointsLayout } from './HeroMediaPointsLayout';
 import { CardGridLayout } from './CardGridLayout';
 import { AvatarRosterLayout } from './AvatarRosterLayout';
@@ -93,6 +94,9 @@ export const CanonicalSlideRenderer: React.FC<CanonicalSlideRendererProps> = ({
         className="flex-1 flex flex-col justify-center min-h-0 overflow-hidden"
         style={{ height: `${SLIDE_GEOMETRY.CONTENT_HEIGHT}px` }}
       >
+        {layout.type === 'hero_intro' && (
+          <HeroIntroLayout payload={layout.payload} tokens={tokens} />
+        )}
         {layout.type === 'hero_media_points' && (
           <HeroMediaPointsLayout payload={layout.payload} tokens={tokens} />
         )}

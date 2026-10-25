@@ -237,6 +237,38 @@ function renderStepperWorkflow(payload: StepperWorkflowPayload, tokens: Canonica
   `;
 }
 
+function renderHeroIntro(payload: any, tokens: CanonicalSlide['tokens']): string {
+  const { pillars, tagline } = payload;
+  const { palette } = tokens;
+
+  return `
+    <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 24px 0;">
+      <div style="max-width: 1000px; padding-top: 16px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; background: ${palette.accent}20; color: ${palette.primary}; border: 1.5px solid ${palette.accent}40; margin-bottom: 24px;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></span>
+          <span>Operational Integrity & Verified Service</span>
+        </div>
+        <p style="font-family: Georgia, serif; font-size: 24px; line-height: 1.6; color: ${palette.text}; margin: 0;">
+          ${tagline || "Built alongside luxury hoteliers to bridge the gap between executive standards and daily floor execution — ensuring accountability, tamper-proof proof, and pristine guest experiences across every shift."}
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; padding-top: 32px; border-top: 1.5px solid ${palette.border}80;">
+        ${pillars.map((p: any, idx: number) => `
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <span style="font-family: monospace; font-size: 14px; font-weight: 700; padding: 2px 8px; border-radius: 4px; background: ${palette.primary}18; color: ${palette.primary};">0${idx + 1}</span>
+              <span style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: ${palette.accent};">${p.badge || 'Core Value'}</span>
+            </div>
+            <h3 style="font-family: Georgia, serif; font-size: 22px; font-weight: 700; color: ${palette.text}; margin: 0 0 10px;">${p.title}</h3>
+            <p style="font-size: 15px; line-height: 1.6; color: ${palette.textMuted}; margin: 0;">${p.description}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
 /**
  * Render single slide HTML using Canonical Adapter
  */
@@ -247,6 +279,9 @@ function renderCanonicalSlideHtml(slide: SlideData, deck: PresentationDeck): str
 
   let bodyContent = '';
   switch (layout.type) {
+    case 'hero_intro':
+      bodyContent = renderHeroIntro(layout.payload, tokens);
+      break;
     case 'hero_media_points':
       bodyContent = renderHeroMediaPoints(layout.payload, tokens);
       break;

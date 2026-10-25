@@ -933,6 +933,19 @@ export async function generatePptx(deck: PresentationDeck): Promise<Buffer> {
 
     // 4. Layout Dispatch strictly according to canonical type
     switch (layout.type) {
+      case 'hero_intro':
+        renderPptxCardGrid(slide, {
+          columns: 3,
+          cards: layout.payload.pillars.map((p: any, i: number) => ({
+            id: `pillar-${i}`,
+            number: `0${i + 1}`,
+            badge: p.badge || 'Core Value',
+            title: p.title,
+            description: p.description
+          }))
+        }, tokens, startX, totalWidth);
+        break;
+
       case 'hero_media_points':
         renderPptxHeroMediaPoints(slide, layout.payload, tokens, startX, totalWidth);
         break;

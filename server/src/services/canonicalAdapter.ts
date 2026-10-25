@@ -139,6 +139,21 @@ export function toCanonicalSlide(slide: SlideData, deck: PresentationDeck): Cano
       break;
     }
 
+    case 'intro_title': {
+      layoutPayload = {
+        type: 'hero_intro',
+        payload: {
+          tagline: slide.subtitle,
+          pillars: slide.cards.map(c => ({
+            title: c.title,
+            description: c.description,
+            badge: c.badge
+          }))
+        }
+      };
+      break;
+    }
+
     case 'grid_six': {
       layoutPayload = {
         type: 'card_grid',

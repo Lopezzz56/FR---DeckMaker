@@ -399,12 +399,27 @@ export function generate8SlideDeck(dossier: CompanyDossier, preferredTheme: 'mis
 
   // SECTION 2: PERSONALIZED COMPANY PRESENTATION (Slides 10–12)
 
-  // Slide 10: Understanding your business (Personalized Portfolio)
+  // Slide 10: Understanding your business (Personalized Portfolio & Scale)
+  const isChain = dossier.properties && dossier.properties.length > 3;
+  const isBoutique = dossier.properties && dossier.properties.length <= 2;
+  const propertyTypes = Array.from(new Set(
+    (dossier.properties || []).map(p => typeof p === 'string' ? 'Property' : (p.type || 'Property'))
+  )).join(', ');
+
+  let portfolioContext = 'Tailored luxury hotel operations with high standards of operational discipline.';
+  if (isChain) {
+    portfolioContext = `Multi-property consistency across diverse destinations, maintaining uniform brand standards at scale.`;
+  } else if (isBoutique) {
+    portfolioContext = `Independent boutique hospitality where personalized guest touchpoints and room presentation define your brand.`;
+  } else if (propertyTypes) {
+    portfolioContext = `Distinctive portfolio balancing property character with rigorous operational accountability.`;
+  }
+
   let propListText = (dossier.properties && dossier.properties.length > 0)
-    ? (dossier.properties as any[]).map(p => typeof p === 'string' ? p : `${p.name} (${p.type || 'Property'})`).join(' • ')
-    : 'Multiple luxury hospitality properties and regional locations';
-  if (propListText.length > 145) {
-    propListText = propListText.slice(0, 142) + '...';
+    ? (dossier.properties as any[]).map(p => typeof p === 'string' ? p : `${p.name}${p.location ? ` (${p.location})` : ''}`).join(' • ')
+    : 'Boutique and luxury hospitality portfolio across key regional markets';
+  if (propListText.length > 140) {
+    propListText = propListText.slice(0, 137) + '...';
   }
 
   const slide10: SlideData = {
@@ -422,27 +437,27 @@ export function generate8SlideDeck(dossier: CompanyDossier, preferredTheme: 'mis
       {
         id: 's10-c1',
         number: '01',
-        title: 'Business Model & Mandate',
-        description: `${dossier.businessModel || 'Luxury Hospitality Operator'}. Delivering tailored guest hospitality with high standards of operational discipline.`
+        title: 'Portfolio Scale & Operating Model',
+        description: portfolioContext
       },
       {
         id: 's10-c2',
         number: '02',
-        title: 'Properties & Locations',
+        title: isChain ? 'Flagship Properties & Footprint' : 'Properties & Locations',
         description: propListText,
         sourceUrl: dossier.sources?.[0]?.url
       },
       {
         id: 's10-c3',
         number: '03',
-        title: 'Standards of Your Own',
-        description: 'Proven procedures adapted to each client and property environment, rather than rigid, one-size-fits-all checklists.'
+        title: 'Your Proven Standards',
+        description: 'Procedures refined over years for your guest profile, preserved intact rather than replaced with generic checklists.'
       },
       {
         id: 's10-c4',
         number: '04',
-        title: 'What This Means for Service',
-        description: `With embedded teams across varied asset formats, maintaining identical room-readiness standards requires seamless visibility between leadership and the floor.`
+        title: 'The Execution Challenge',
+        description: `Across morning turnovers and evening turndowns, 100% adherence requires live clarity between floor attendants and leadership.`
       }
     ]
   };
@@ -463,20 +478,20 @@ export function generate8SlideDeck(dossier: CompanyDossier, preferredTheme: 'mis
       {
         id: 's11-c1',
         number: '01',
-        title: 'Execution layer for your standards',
-        description: `Your procedures running on the floor across ${(dossier.properties || []).slice(0, 1).map((p: any) => typeof p === 'string' ? p : p.name)[0] || 'your properties'}, without senior management walking every floor.`
+        title: 'Flawless Execution of Your SOPs',
+        description: `Proven checklists delivered directly to staff phones in room sequence, ensuring consistent 5-star delivery across shifts.`
       },
       {
         id: 's11-c2',
         number: '02',
-        title: 'Evidence for your owner reporting',
-        description: 'An indisputable digital record of what was completed on every shift, ready whenever you report to hotel asset owners.'
+        title: 'Audit-Ready Owner & Brand Proof',
+        description: 'Instant, tamper-proof photo verification and timestamps, ready whenever ownership reviews or brand audits require evidence.'
       },
       {
         id: 's11-c3',
         number: '03',
-        title: 'A product shaped alongside operators',
-        description: `We partner closely with hospitality teams to ensure the software serves the floor staff rather than becoming another cumbersome administrative chore.`
+        title: 'Built to Empower the Floor Team',
+        description: `Intuitive mobile interface attendants master in under 5 minutes, eliminating paper logs without administrative burden.`
       }
     ]
   };

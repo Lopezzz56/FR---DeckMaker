@@ -96,7 +96,17 @@ export interface StepperWorkflowPayload {
   banner?: WorkflowBannerSlot;
 }
 
+export interface HeroIntroPayload {
+  tagline?: string;
+  pillars: Array<{
+    title: string;
+    description: string;
+    badge?: string;
+  }>;
+}
+
 export type LayoutPayload = 
+  | { type: 'hero_intro'; payload: HeroIntroPayload }
   | { type: 'hero_media_points'; payload: HeroMediaPointsPayload }
   | { type: 'card_grid'; payload: CardGridPayload }
   | { type: 'avatar_roster'; payload: AvatarRosterPayload }
