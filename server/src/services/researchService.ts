@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import { GoogleGenAI } from '@google/genai';
 import { CompanyDossier, ResearchFact, ResearchSource, BrandPalette } from '../types/presentation.js';
 
 // Curated authentic intelligence for known luxury & hospitality operators
@@ -408,8 +409,6 @@ export async function researchCompany(params: {
     webData = await scrapeWebsite(params.websiteUrl);
   }
 
-  const palette = createHospitalityPalette(webData.colors, nameClean);
-
   const sources: ResearchSource[] = [];
   if (params.websiteUrl) {
     sources.push({
@@ -432,6 +431,97 @@ export async function researchCompany(params: {
       category: 'uploaded_doc'
     });
   }
+
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (apiKey) {
+    try {
+      const ai = new GoogleGenAI({ apiKey });
+      const prompt = `You are an elite hospitality operations research analyst for FocusRealm's "Mise Hotel" platform.
+We are preparing an executive enterprise sales presentation for "${nameClean}".
+
+Website: ${params.websiteUrl || 'Not provided'}
+User Notes: ${params.userNotes || 'None'}
+Scraped Web Page Title: ${webData.title || 'N/A'}
+Scraped Description: ${webData.description || 'N/A'}
+Scraped Headings: ${webData.headings.join(' | ') || 'N/A'}
+Scraped Text Sample: ${webData.paragraphs.slice(0, 8).join('\n') || 'N/A'}
+
+TASK: Analyze this hotel/hospitality group and return a clean, strictly formatted JSON object matching this schema:
+{
+  "tagline": "A concise, elegant brand positioning slogan (max 10 words)",
+  "businessModel": "Specific operational category (e.g. 'Luxury Boutique Hotel & Spa Group', 'Integrated Resort Management', 'Heritage Palace Operator')",
+  "properties": [
+    { "name": "Property Name", "location": "City, Country", "type": "Boutique Hotel / Luxury Resort / Private Villas" }
+  ],
+  "operationalContext": [
+    "3 to 4 specific operational realities, challenges, or standards for this group"
+  ],
+  "primaryColorHex": "#hex color matching their brand or luxury hospitality palette",
+  "accentColorHex": "#hex vibrant accent color",
+  "verifiedFact": "1 concrete verified fact about their footprint, standards, or property portfolio",
+  "operationalHypothesis": "1 logical operational challenge about maintaining 5-star service on the floor across shifts without supervisor fatigue"
+}
+
+Respond ONLY with valid JSON. Do not include markdown code block syntax or extra conversational text.`;
+
+      const aiResponse = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: prompt
+      });
+
+      const rawText = aiResponse.text?.trim() || '';
+      const cleanJson = rawText.replace(/^```json\s*/i, '').replace(/```$/i, '').trim();
+      const parsed = JSON.parse(cleanJson);
+
+      if (parsed && parsed.tagline) {
+        const geminiPalette = createHospitalityPalette(
+          [parsed.primaryColorHex, parsed.accentColorHex, ...webData.colors].filter(Boolean),
+          nameClean
+        );
+
+        const factsAndHypotheses: ResearchFact[] = [
+          {
+            id: 'f1',
+            statement: parsed.verifiedFact || `${nameClean} operates luxury hospitality properties with verified standards of service delivery.`,
+            type: 'verified_fact',
+            sourceUrl: params.websiteUrl || undefined,
+            sourceTitle: `${nameClean} Verified Public Information`,
+            relevance: 'Establishes verified brand footprint and property portfolio.'
+          },
+          {
+            id: 'h1',
+            statement: parsed.operationalHypothesis || 'With varied accommodations and high turnover windows, 100% SOP adherence requires real-time floor verification.',
+            type: 'inferred_hypothesis',
+            relevance: 'Identifies the supervisor bottleneck where managers cannot inspect every turnover room on foot.'
+          }
+        ];
+
+        return {
+          name: nameClean,
+          websiteUrl: params.websiteUrl,
+          tagline: parsed.tagline,
+          businessModel: parsed.businessModel,
+          properties: (parsed.properties && parsed.properties.length > 0) ? parsed.properties : [
+            { name: `${nameClean} Flagship Property`, location: 'Primary Destination', type: 'Luxury Hotel & Suites' }
+          ],
+          operationalContext: parsed.operationalContext || [
+            `Dedicated hospitality operations across ${nameClean} properties`,
+            'Focus on consistent guest satisfaction and room delivery standards'
+          ],
+          brandPalette: geminiPalette,
+          logoUrl: webData.logoUrl,
+          sources,
+          factsAndHypotheses,
+          userNotes: params.userNotes
+        };
+      }
+    } catch (err) {
+      console.warn('[Gemini AI Synthesis] Falling back to rule-based synthesis:', err);
+    }
+  }
+
+  // Fallback: Rule-based extraction
+  const palette = createHospitalityPalette(webData.colors, nameClean);
 
   // Extract properties and facts
   const properties: Array<{ name: string; location: string; type: string }> = [];
