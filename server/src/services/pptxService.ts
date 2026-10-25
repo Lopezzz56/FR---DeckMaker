@@ -1,8 +1,12 @@
-import pptxgen from 'pptxgenjs';
+import { createRequire } from 'module';
 import path from 'path';
 import fs from 'fs';
 import { PresentationDeck } from '../types/presentation.js';
 import { toCanonicalSlide } from './canonicalAdapter.js';
+
+const require = createRequire(import.meta.url);
+const pptxgen = require('pptxgenjs');
+
 import { 
   CanonicalSlide, 
   HeroMediaPointsPayload, 
