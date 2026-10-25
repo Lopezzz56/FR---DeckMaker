@@ -557,6 +557,127 @@ function renderPptxCardGrid(
   }
 }
 
+function renderPptxHeroIntro(
+  slide: any,
+  payload: any,
+  tokens: DesignTokens,
+  startX: number,
+  totalWidth: number
+) {
+  const { pillars = [], tagline } = payload;
+  const { palette } = tokens;
+  const primary = cleanHex(palette.primary, '102F35');
+  const accent = cleanHex(palette.accent, '3DB89E');
+  const textColor = cleanHex(palette.text, '102F35');
+  const textMuted = cleanHex(palette.textMuted, '64748B');
+  const cardBorder = cleanHex(palette.border, 'D8D2C4');
+
+  // 1. Executive Callout Pill
+  slide.addShape('roundRect', {
+    x: startX,
+    y: 2.1,
+    w: 3.8,
+    h: 0.35,
+    rectRadius: 0.17,
+    fill: { color: 'E6F4F1' },
+    line: { color: accent, width: 1 }
+  });
+  slide.addText('OPERATIONAL INTEGRITY & VERIFIED SERVICE', {
+    x: startX + 0.15,
+    y: 2.12,
+    w: 3.5,
+    h: 0.3,
+    fontSize: 8.5,
+    fontFace: 'Arial',
+    color: primary,
+    bold: true,
+    charSpacing: 1.5
+  });
+
+  // 2. Value Narrative Statement
+  slide.addText(
+    tagline || 'Built alongside luxury hoteliers to bridge the gap between executive standards and daily floor execution — ensuring accountability, tamper-proof proof, and pristine guest experiences across every shift.',
+    {
+      x: startX,
+      y: 2.6,
+      w: totalWidth - 1.0,
+      h: 0.95,
+      fontSize: 14.5,
+      fontFace: 'Georgia',
+      color: textColor,
+      lineSpacingMultiple: 1.25
+    }
+  );
+
+  // 3. Subtle Horizontal Divider
+  slide.addShape('rect', {
+    x: startX,
+    y: 3.75,
+    w: totalWidth,
+    h: 0.02,
+    fill: { color: cardBorder }
+  });
+
+  // 4. Three Editorial Value Pillars
+  const cols = 3;
+  const gap = 0.5;
+  const colW = (totalWidth - (cols - 1) * gap) / cols;
+  const pillarY = 4.0;
+
+  pillars.forEach((pillar: any, idx: number) => {
+    const pX = startX + idx * (colW + gap);
+
+    // Number & Badge Tag
+    slide.addText(`0${idx + 1}   ${(pillar.badge || 'CORE VALUE').toUpperCase()}`, {
+      x: pX,
+      y: pillarY,
+      w: colW,
+      h: 0.3,
+      fontSize: 9.5,
+      fontFace: 'Arial',
+      color: accent,
+      bold: true,
+      charSpacing: 1
+    });
+
+    // Pillar Title
+    slide.addText(pillar.title, {
+      x: pX,
+      y: pillarY + 0.38,
+      w: colW,
+      h: 0.45,
+      fontSize: 15,
+      fontFace: 'Georgia',
+      color: textColor,
+      bold: true
+    });
+
+    // Pillar Description
+    slide.addText(pillar.description, {
+      x: pX,
+      y: pillarY + 0.9,
+      w: colW,
+      h: 1.2,
+      fontSize: 10,
+      fontFace: 'Arial',
+      color: textMuted,
+      lineSpacingMultiple: 1.25
+    });
+
+    // Verification check note
+    slide.addText('✓ Verified FocusRealm Standard', {
+      x: pX,
+      y: pillarY + 2.2,
+      w: colW,
+      h: 0.3,
+      fontSize: 9,
+      fontFace: 'Arial',
+      color: primary,
+      bold: true
+    });
+  });
+}
+
 function renderPptxAvatarRoster(
   slide: any, 
   payload: AvatarRosterPayload, 
@@ -566,7 +687,7 @@ function renderPptxAvatarRoster(
 ) {
   const { members } = payload;
   const { palette } = tokens;
-  const startY = 2.25;
+  const startY = 2.15;
 
   const primary = cleanHex(palette.primary, '102F35');
   const accent = cleanHex(palette.accent, '3DB89E');
@@ -576,12 +697,16 @@ function renderPptxAvatarRoster(
   const textMuted = cleanHex(palette.textMuted, '64748B');
 
   const count = members.length;
-  const gap = 0.35;
-  const cardW = (totalWidth - (count - 1) * gap) / count;
-  const cardH = 4.3;
+  // If 2 members, center them nicely with generous width; if 3, span full totalWidth
+  const isTwoCols = count === 2;
+  const gap = isTwoCols ? 0.7 : 0.45;
+  const rosterWidth = isTwoCols ? totalWidth - 2.0 : totalWidth;
+  const rosterStartX = isTwoCols ? startX + 1.0 : startX;
+  const cardW = (rosterWidth - (count - 1) * gap) / count;
+  const cardH = 4.45;
 
   members.forEach((member, idx) => {
-    const cX = startX + idx * (cardW + gap);
+    const cX = rosterStartX + idx * (cardW + gap);
     const assetPath = resolveAssetPath(member.imageUrl);
 
     // Card background
@@ -590,9 +715,9 @@ function renderPptxAvatarRoster(
       y: startY,
       w: cardW,
       h: cardH,
-      rectRadius: 0.08,
+      rectRadius: 0.12,
       fill: { color: cardFill },
-      line: { color: cardBorder, width: 1 }
+      line: { color: cardBorder, width: 1.2 }
     });
 
     // Top accent
@@ -600,14 +725,14 @@ function renderPptxAvatarRoster(
       x: cX,
       y: startY,
       w: cardW,
-      h: 0.08,
+      h: 0.1,
       fill: { color: primary }
     });
 
     // Circular portrait
-    const avatarSize = 1.45;
+    const avatarSize = 1.65;
     const avatarX = cX + (cardW - avatarSize) / 2;
-    const avatarY = startY + 0.3;
+    const avatarY = startY + 0.35;
 
     if (assetPath) {
       slide.addImage({
@@ -631,10 +756,10 @@ function renderPptxAvatarRoster(
       const initials = member.name.split(' ').map(n => n[0]).join('').slice(0, 2);
       slide.addText(initials, {
         x: avatarX,
-        y: avatarY + 0.35,
+        y: avatarY + 0.4,
         w: avatarSize,
-        h: 0.7,
-        fontSize: 16,
+        h: 0.8,
+        fontSize: 18,
         fontFace: 'Georgia',
         color: 'FFFFFF',
         bold: true,
@@ -642,43 +767,57 @@ function renderPptxAvatarRoster(
       });
     }
 
-    // Name
-    slide.addText(member.name, {
-      x: cX + 0.2,
-      y: avatarY + avatarSize + 0.15,
-      w: cardW - 0.4,
-      h: 0.35,
-      fontSize: 14.5,
-      fontFace: 'Georgia',
-      color: textColor,
-      bold: true,
-      align: 'center'
-    });
-
     // Role / Badge
     slide.addText(member.role.toUpperCase(), {
       x: cX + 0.2,
-      y: avatarY + avatarSize + 0.5,
+      y: avatarY + avatarSize + 0.2,
       w: cardW - 0.4,
-      h: 0.25,
-      fontSize: 9,
+      h: 0.28,
+      fontSize: 9.5,
       fontFace: 'Arial',
       color: accent,
       bold: true,
       align: 'center'
     });
 
+    // Name
+    slide.addText(member.name, {
+      x: cX + 0.2,
+      y: avatarY + avatarSize + 0.52,
+      w: cardW - 0.4,
+      h: 0.42,
+      fontSize: 16,
+      fontFace: 'Georgia',
+      color: textColor,
+      bold: true,
+      align: 'center'
+    });
+
     // Bio
     slide.addText(member.bio, {
-      x: cX + 0.25,
-      y: avatarY + avatarSize + 0.8,
-      w: cardW - 0.5,
-      h: cardH - (avatarSize + 1.25),
-      fontSize: 9.5,
+      x: cX + 0.35,
+      y: avatarY + avatarSize + 0.98,
+      w: cardW - 0.7,
+      h: 0.85,
+      fontSize: 10,
       fontFace: 'Arial',
       color: textMuted,
       lineSpacingMultiple: 1.2,
       align: 'center'
+    });
+
+    // Bottom note
+    slide.addText('FOCUSREALM EXECUTIVE', {
+      x: cX + 0.2,
+      y: startY + cardH - 0.38,
+      w: cardW - 0.4,
+      h: 0.25,
+      fontSize: 8.5,
+      fontFace: 'Arial',
+      color: primary,
+      bold: true,
+      align: 'center',
+      charSpacing: 1.5
     });
   });
 }
@@ -938,16 +1077,7 @@ export async function generatePptx(deck: PresentationDeck): Promise<Buffer> {
     // 4. Layout Dispatch strictly according to canonical type
     switch (layout.type) {
       case 'hero_intro':
-        renderPptxCardGrid(slide, {
-          columns: 3,
-          cards: layout.payload.pillars.map((p: any, i: number) => ({
-            id: `pillar-${i}`,
-            number: `0${i + 1}`,
-            badge: p.badge || 'Core Value',
-            title: p.title,
-            description: p.description
-          }))
-        }, tokens, startX, totalWidth);
+        renderPptxHeroIntro(slide, layout.payload, tokens, startX, totalWidth);
         break;
 
       case 'hero_media_points':

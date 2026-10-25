@@ -512,24 +512,19 @@ export function App() {
   };
 
   // Clean, High-Resolution 16:9 PDF Export using backend headless Chromium
+  // High-Resolution 16:9 PDF Export rendering all canonical slides
   const handleExportPdf = async (targetDeck?: PresentationDeck) => {
     const deckToExport = targetDeck || currentDeck;
     if (!deckToExport) return;
     setIsExporting(true);
     setExportType('pdf');
-    setSaveStatus('Generating high-res PDF...');
+    setSaveStatus('Rendering 16:9 Presentation PDF...');
     try {
-      const res = await fetch('/api/export-pdf', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(deckToExport)
+      const pdfBlob = await exportDeckToPdf(deckToExport, (current, total) => {
+        setSaveStatus(`Rendering Slide ${current} of ${total}...`);
       });
 
-      if (!res.ok) throw new Error('Server PDF rendering failed');
-
-      const arrayBuf = await res.arrayBuffer();
-      const blob = new Blob([arrayBuf], { type: 'application/pdf' });
-      const url = window.URL.createObjectURL(blob);
+      const url = window.URL.createObjectURL(pdfBlob);
       const a = document.createElement('a');
       a.href = url;
       a.download = `${deckToExport.companyName.replace(/[^a-zA-Z0-9]/g, '_')}_FocusRealm_Presentation.pdf`;
@@ -538,19 +533,12 @@ export function App() {
       setTimeout(() => {
         window.URL.revokeObjectURL(url);
         a.remove();
-      }, 200);
+      }, 500);
       setSaveStatus('PDF downloaded');
     } catch (err: any) {
-      console.warn('Backend PDF export error, falling back to client canvas exporter:', err);
-      try {
-        await exportDeckToPdf(deckToExport, (current, total) => {
-          setSaveStatus(`Rendering PDF: ${current}/${total}`);
-        });
-        setSaveStatus('PDF downloaded');
-      } catch (clientErr) {
-        console.error('Client PDF export failed:', clientErr);
-        window.print();
-      }
+      console.error('PDF export error:', err);
+      alert(`Could not export PDF: ${err?.message || err}`);
+      setSaveStatus('PDF export failed');
     } finally {
       setIsExporting(false);
       setExportType(null);
