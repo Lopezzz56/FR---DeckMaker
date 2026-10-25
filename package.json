@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "AI-Powered Enterprise Presentation Generator for FocusRealm",
   "main": "server/src/index.ts",
+  "type": "module",
   "workspaces": [
     "client",
     "server"

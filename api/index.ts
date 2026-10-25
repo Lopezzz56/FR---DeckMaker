@@ -1,26 +1,45 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import apiRouter from '../server/src/routes/api.js';
 
-const app = express();
+let appPromise: Promise<express.Express> | null = null;
 
-app.use(cors());
-app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+async function getApp(): Promise<express.Express> {
+  if (appPromise) return appPromise;
 
-// Serve static assets from server/assets directory
-const assetsPath = path.resolve(process.cwd(), 'server/assets');
-app.use('/assets', express.static(assetsPath));
+  appPromise = (async () => {
+    const app = express();
 
-// API routes mounted at /api
-app.use('/api', apiRouter);
+    app.use(cors());
+    app.use(express.json({ limit: '50mb' }));
+    app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// Root health check
-app.get('/api/health', (_req, res) => {
-  res.json({ status: 'ok', service: 'FocusRealm Presentation Studio Backend (Serverless)' });
-});
+    // Serve static assets from server/assets directory
+    const assetsPath = path.resolve(process.cwd(), 'server/assets');
+    app.use('/assets', express.static(assetsPath));
 
-export default function handler(req: any, res: any) {
-  return app(req, res);
+    // Dynamically import ESM router
+    const { default: apiRouter } = await import('../server/src/routes/api.js');
+    app.use('/api', apiRouter);
+
+    // Root health check
+    app.get('/api/health', (_req, res) => {
+      res.json({ status: 'ok', service: 'FocusRealm Presentation Studio Backend (Serverless ESM)' });
+    });
+
+    return app;
+  })();
+
+  return appPromise;
 }
+
+export default async function handler(req: any, res: any) {
+  try {
+    const app = await getApp();
+    return app(req, res);
+  } catch (err: any) {
+    console.error('Fatal Serverless Handler Error:', err);
+    res.status(500).json({ error: 'Serverless invocation error', details: err?.message || String(err) });
+  }
+}
+
